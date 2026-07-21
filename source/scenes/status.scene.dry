@@ -53,7 +53,7 @@ Reichstag composition:
 
 <span class="tooltip-text" title="United Left Workers Front" style="color: #2B0303;">FVA</span>: [+ left_r +]%
 
-<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #2B0303;">LCPR</span>: [+ lcpr_r +]%
+<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F57C00;">LCPR</span>: [+ lcpr_r +]%
 
 <span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>: [+ rnkp_r +]%
 
@@ -90,7 +90,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="United Left Workers Front" style="color: #2B0303;">FVA</span>!}: [+ left_relation : relationships +]
 
-{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #2B0303;">LCPR</span>!}: [+ lcpr_relation : relationships +]
+{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F57C00;">LCPR</span>!}: [+ lcpr_relation : relationships +]
 
 {!<span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>!}: [+ rnkp_relation : relationships +]
 
@@ -196,7 +196,7 @@ Workers:
 {!<span class="tooltip-text" title="Rogroucean Liberal Republican Party" style="color: #DAB74C;">RLRP</span>!}: [+ workers_rlrp_display +]%, 
 {!<span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>!}: [+ workers_rnkp_display +]%, 
 {!<span class="tooltip-text" title="Peasant Front" style="color: #2E7D32;">BF</span>!}: [+ workers_bf_display +]%, 
-{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #2B0303;">LCPR</span>!}: [+ workers_lcpr_display +]%, 
+{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F57C00;">LCPR</span>!}: [+ workers_lcpr_display +]%, 
 {!<span class="tooltip-text" title="National Patriot Front" style="color: #654D5A;">NPF</span>!}: [+ workers_npf_display +]%, 
 {!<span class="tooltip-text" title="Others" style="color: #a0a0a0;">Others</span>!}: [+ workers_other_display +]% 
 [? if sapd_formed: {!<span class="tooltip-text" title="Rogroucean Communist Party" style="color: #591716;">RKP</span>!}: [+ workers_sapd_display +]% ?]
@@ -209,7 +209,7 @@ New Middle Class:
 {!<span class="tooltip-text" title="Rogroucean Liberal Republican Party" style="color: #DAB74C;">RLRP</span>!}: [+ new_middle_rlrp_display +]%, 
 {!<span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>!}: [+ new_middle_rnkp_display +]%, 
 {!<span class="tooltip-text" title="Peasant Front" style="color: #2E7D32;">BF</span>!}: [+ new_middle_bf_display +]%, 
-{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #2B0303;">LCPR</span>!}: [+ new_middle_lcpr_display +]%, 
+{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F57C00;">LCPR</span>!}: [+ new_middle_lcpr_display +]%, 
 {!<span class="tooltip-text" title="National Patriot Front" style="color: #654D5A;">NPF</span>!}: [+ new_middle_npf_display +]%, 
 {!<span class="tooltip-text" title="Others" style="color: #a0a0a0;">Others</span>!}: [+ new_middle_other_display +]% 
 [? if sapd_formed: {!<span class="tooltip-text" title="Rogroucean Communist Party" style="color: #591716;">RKP</span>!}: [+ new_middle_sapd_display +]% ?]
@@ -222,7 +222,7 @@ Old Middle Class:
 {!<span class="tooltip-text" title="Rogroucean Liberal Republican Party" style="color: #DAB74C;">RLRP</span>!}: [+ old_middle_rlrp_display +]%, 
 {!<span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>!}: [+ old_middle_rnkp_display +]%, 
 {!<span class="tooltip-text" title="Peasant Front" style="color: #2E7D32;">BF</span>!}: [+ old_middle_bf_display +]%, 
-{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #2B0303;">LCPR</span>!}: [+ old_middle_lcpr_display +]%, 
+{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F57C00;">LCPR</span>!}: [+ old_middle_lcpr_display +]%, 
 {!<span class="tooltip-text" title="National Patriot Front" style="color: #654D5A;">NPF</span>!}: [+ old_middle_npf_display +]%, 
 {!<span class="tooltip-text" title="Others" style="color: #a0a0a0;">Others</span>!}: [+ old_middle_other_display +]% 
 [? if sapd_formed: {!<span class="tooltip-text" title="Rogroucean Communist Party" style="color: #591716;">RKP</span>!}: [+ old_middle_sapd_display +]% ?]
@@ -235,7 +235,7 @@ Rural:
 {!<span class="tooltip-text" title="Rogroucean Liberal Republican Party" style="color: #DAB74C;">RLRP</span>!}: [+ rural_rlrp_display +]%, 
 {!<span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>!}: [+ rural_rnkp_display +]%, 
 {!<span class="tooltip-text" title="Peasant Front" style="color: #2E7D32;">BF</span>!}: [+ rural_bf_display +]%, 
-{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #2B0303;">LCPR</span>!}: [+ rural_lcpr_display +]%, 
+{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F57C00;">LCPR</span>!}: [+ rural_lcpr_display +]%, 
 {!<span class="tooltip-text" title="National Patriot Front" style="color: #654D5A;">NPF</span>!}: [+ rural_npf_display +]%, 
 {!<span class="tooltip-text" title="Others" style="color: #a0a0a0;">Others</span>!}: [+ rural_other_display +]% 
 [? if sapd_formed: {!<span class="tooltip-text" title="Rogroucean Communist Party" style="color: #591716;">RKP</span>!}: [+ rural_sapd_display +]% ?]
@@ -248,7 +248,7 @@ Unemployed:
 {!<span class="tooltip-text" title="Rogroucean Liberal Republican Party" style="color: #DAB74C;">RLRP</span>!}: [+ unemployed_rlrp_display +]%, 
 {!<span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>!}: [+ unemployed_rnkp_display +]%, 
 {!<span class="tooltip-text" title="Peasant Front" style="color: #2E7D32;">BF</span>!}: [+ unemployed_bf_display +]%, 
-{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #2B0303;">LCPR</span>!}: [+ unemployed_lcpr_display +]%, 
+{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F57C00;">LCPR</span>!}: [+ unemployed_lcpr_display +]%, 
 {!<span class="tooltip-text" title="National Patriot Front" style="color: #654D5A;">NPF</span>!}: [+ unemployed_npf_display +]%, 
 {!<span class="tooltip-text" title="Others" style="color: #a0a0a0;">Others</span>!}: [+ unemployed_other_display +]% 
 [? if sapd_formed: {!<span class="tooltip-text" title="Rogroucean Communist Party" style="color: #591716;">RKP</span>!}: [+ unemployed_sapd_display +]% ?]
