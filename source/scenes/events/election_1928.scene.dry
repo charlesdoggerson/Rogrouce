@@ -186,8 +186,8 @@ on-display: {!
 data = [
     {
         "id": "left",
-        "legend": "RLF",
-        "name": "RLF",
+        "legend": "left",
+        "name": "left",
         "seats": Math.round(Q.left_r*7),
     }
 ];
@@ -266,6 +266,7 @@ if (window && d3) {
 }
 !}
 go-to: coalition_menu
+
 = Election results
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
