@@ -198,13 +198,13 @@ Q.budget = 4;
 
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 50; // industry and trade
+Q.workers = 40; // industry and trade
 Q.old_middle = 15; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
 Q.new_middle = 15; // "new mittelstand"
-Q.rural = 30; // agriculture and forestry employment... but many of those are proletarians so...
+Q.rural = 40; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 20;
+Q.unemployed = 10;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -273,17 +273,17 @@ Q.rural_left = 1;
 Q.rural_rkp = 1;
 Q.rural_su = 0;
 Q.rural_rnu = 5;
-Q.rural_bf = 30;
+Q.rural_bf = 50;
 Q.rural_rlrp = 0;
-Q.rural_lcpr = 10;
-Q.rural_rnkp = 30;
+Q.rural_lcpr = 5;
+Q.rural_rnkp = 50;
 Q.rural_npf = 5;
 Q.rural_other = 10;
 
 Q.unemployed_left = 5;
 Q.unemployed_rkp = 20;
 Q.unemployed_su = 10;
-Q.unemployed_rnu = 30;
+Q.unemployed_rnu = 20;
 Q.unemployed_bf = 10;
 Q.unemployed_rlrp = 0;
 Q.unemployed_lcpr = 0;
@@ -306,7 +306,7 @@ Q.rnu_r = 25;
 Q.bf_r = 20;
 Q.rlrp_r = 10;
 Q.lcpr_r = 10;
-Q.rnkp_r = 30;
+Q.rnkp_r = 25;
 Q.npf_r = 7;
 Q.other_r = 5;
 // diff from prev
