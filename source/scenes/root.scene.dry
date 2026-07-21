@@ -104,15 +104,15 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.left_relation = 20;
-Q.rkp_relation = 40;
+Q.rkp_relation = 50;
 Q.su_relation = 70;
-Q.bf_relation = 60;
-Q.rlrp_relation = 60;
-Q.lcpr_relation = 30;
-Q.rnkp_relation = 20;
+Q.bf_relation = 70;
+Q.rlrp_relation = 70;
+Q.lcpr_relation = 40;
+Q.rnkp_relation = 30;
 Q.lu_relation = 20;
 Q.npf_relation = 0;
-Q.other_relation = 20;
+Q.other_relation = 30;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
