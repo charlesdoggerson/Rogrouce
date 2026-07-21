@@ -81,6 +81,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
+
 {!<span class="tooltip-text" title="Socialist Union" style="color: #E53935;">SU</span>!}: [+ su_relation : relationships +]
 
 {!<span class="tooltip-text" title="Peasant Front" style="color: #2E7D32;">BF</span>!}: [+ bf_relation : relationships +]
