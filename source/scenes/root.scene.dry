@@ -37,6 +37,8 @@ Q.use_decimals = 0;
 
 // party resources
 Q.resources = 2;
+//Fatherland Front resources
+Q.fatherland_resources = 2;
 // party dues
 Q.dues = 2;
 
@@ -108,6 +110,7 @@ Q.bf_relation = 60;
 Q.rlrp_relation = 60;
 Q.lcpr_relation = 30;
 Q.rnkp_relation = 20;
+Q.lu_relation = 20;
 Q.npf_relation = 0;
 Q.other_relation = 20;
 
@@ -404,6 +407,12 @@ Q.unemployment_insurance_seen = 0;
 // unemployment insurance event is seen if the unemployment level is at least 4 more than the threshold...
 Q.unemployment_insurance_threshold = 10;
 Q.blutmai = 0;
+
+//Have we pissed off our friends?
+Q.bf_angry = 0;
+Q.lib_angry = 0;
+Q.SU_angry = 0;
+
 
 // have we reformed these institutions to be more democratic?
 Q.judicial_reform = 0;
