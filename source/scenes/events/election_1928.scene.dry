@@ -275,7 +275,7 @@ go-to: coalition_menu
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E57373; outline: 2px; outline-style: solid;'> </div> !} **RNU:** {!</td><td>!} **[+ rnu_r +]%** {!</td><td>!} **[+ str_change_rnu +]** {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#2B0303'> </div> !}ULFW: {!</td><td>!} [+ left_r +]% {!</td><td>!} [+ str_change_left +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#2B0303'> </div> !}FVA: {!</td><td>!} [+ left_r +]% {!</td><td>!} [+ str_change_left +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#591716'> </div> !}RKP: {!</td><td>!} [+ rkp_r +]% {!</td><td>!} [+ str_change_rkp +] {!</td></tr>!}
 
