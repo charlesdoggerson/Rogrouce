@@ -243,9 +243,9 @@ Q.workers_rnu = 50;
 Q.workers_bf = 0;
 Q.workers_rlrp = 0;
 Q.workers_lcpr = 0;
-Q.workers_rnkp = 5;
+Q.workers_rnkp = 10;
 Q.workers_npf = 0;
-Q.workers_other = 10;
+Q.workers_other = 5;
 
 Q.old_middle_left = 0;
 Q.old_middle_rkp = 0;
@@ -260,14 +260,14 @@ Q.old_middle_other = 10;
 
 Q.new_middle_left = 0;
 Q.new_middle_su = 0;
-Q.new_middle_rkp = 1;
+Q.new_middle_rkp = 0;
 Q.new_middle_rnu = 5;
 Q.new_middle_bf = 0;
 Q.new_middle_rlrp= 25;
 Q.new_middle_lcpr = 25;
 Q.new_middle_rnkp = 10;
 Q.new_middle_npf = 5;
-Q.new_middle_other = 15;
+Q.new_middle_other = 5;
 
 Q.rural_left = 1;
 Q.rural_rkp = 1;
@@ -278,7 +278,7 @@ Q.rural_rlrp = 0;
 Q.rural_lcpr = 5;
 Q.rural_rnkp = 50;
 Q.rural_npf = 5;
-Q.rural_other = 10;
+Q.rural_other = 5;
 
 Q.unemployed_left = 5;
 Q.unemployed_rkp = 20;
