@@ -22,6 +22,8 @@ Resources available: [+ resources +]
 
 <span style="color: #E53935;">**F**</span><span style="color: #E57373;">**RO**</span><span style="color: #2E7D32;">**N**</span><span style="color: #DAB74C;">**T**</span> Resources: [+ fatherland_resources +]
 
+<span style="color: #E53935;">**F**</span><span style="color: #E57373;">**RO**</span><span style="color: #2E7D32;">**N**</span><span style="color: #DAB74C;">**T**</span> Unity: [+ front_unity +]
+
 
 
 SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
