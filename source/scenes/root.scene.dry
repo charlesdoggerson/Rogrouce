@@ -409,9 +409,9 @@ Q.unemployment_insurance_threshold = 10;
 Q.blutmai = 0;
 
 //Have we pissed off our friends?
-Q.bf_angry = 0;
-Q.lib_angry = 0;
-Q.SU_angry = 0;
+Q.bf_angry = 1;
+Q.lib_angry = 1;
+Q.SU_angry = 1;
 
 
 // have we reformed these institutions to be more democratic?
