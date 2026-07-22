@@ -47,9 +47,9 @@ We have increased our campaigning among the old middle class. [? if nationalism 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: rural_rnu += 5*(1-dissent); rural_rnu -= 3*(1-dissent) if peoples_party == 0; resources -= 1; peoples_party_support += 1; rural_rnu += 3*(1-dissent) if rural_policy >= 2; bf_angry -=1 if bf_angry > 0
+on-arrival: rural_rnu += 5*(1-dissent); rural_rnu -= 3*(1-dissent) if peoples_party == 0; resources -= 1; peoples_party_support += 1; rural_rnu += 3*(1-dissent) if rural_policy >= 2; bf_angry +=1 if bf_angry > 0
 
-We have increased our campaigning among farmers. Though usually the domain of the <span style="color: #2E7D32;">Peasant Front</span>, [? if bf_angry < 3: they see this as a sign that we will focus on helping the farmers aswell. ?] [? if bf_angry >=3: it has helped reduce the tension between our parties. ?]
+We have increased our campaigning among farmers. Though usually the domain of the <span style="color: #2E7D32;">Peasant Front</span>. [? if bf_angry < 3: The party reacts with alarm, though it seems cooler heads have prevailed for now. ?] [? if bf_angry >=3: This has not done us any favors with them, especially due to our increased tensions. ?]
 
 @unemployed
 subtitle: -1 resources
