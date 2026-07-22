@@ -413,7 +413,7 @@ Q.bf_angry = 1;
 Q.lib_angry = 1;
 Q.SU_angry = 1;
 //How united is the front?
-Q.front_unity = 90;
+Q.front_unity = 70;
 
 
 // have we reformed these institutions to be more democratic?
