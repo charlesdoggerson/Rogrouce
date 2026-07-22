@@ -31,9 +31,9 @@ We have increased our campaigning among the workers.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: new_middle_rnu += 6*(1-dissent); new_middle_rnu -= 4 if socialism <= 49 and peoples_party == 0; resources -= 1; peoples_party_support += 1;  libs_angry +=1 if lib_angry > 0
+on-arrival: new_middle_rnu += 6*(1-dissent); new_middle_rnu -= 4 if socialism <= 49 and peoples_party == 0; resources -= 1; peoples_party_support += 1;  lib_angry +=1 if lib_angry > 0
 
-We have increased our campaigning among the new middle class, though this is usually the domain of our allies in the <span style="color: #DAB74C;">RLRP</span> and hey are annoyed that we're interfering in their already small demographic.
+We have increased our campaigning among the new middle class, though this is usually the domain of our allies in the <span style="color: #DAB74C;">RLRP</span> and they are annoyed that we're interfering in their already small demographic.
 
 @old_middle
 subtitle: -1 resources
