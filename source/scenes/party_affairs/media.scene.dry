@@ -9,7 +9,7 @@ card-image: img/sangerbund.jpg
 
 = Media
 
-The SPD runs a veritable media empire, with many newspapers throughout every German city and region. We could use the media for various purposes...
+The <span style="color: #E57373;">RNU</span> runs a veritable media empire around Rogrouce, alongside all the media associated with the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span>  <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span>. 
 
 - @commercial
 - @campaign
@@ -32,7 +32,7 @@ Our commercialized newspapers are able to bring in more funds. However, the left
 @campaign
 title: The purpose of our media is to elect more Social Democrats.
 subtitle: Our newspapers will focus on the electoral campaign.
-on-arrival: campaign_media += 1; workers_spd += 4*(1 - dissent); unemployed_spd += 2*(1-dissent);
+on-arrival: campaign_media += 1; workers_rnu += 4*(1 - dissent); unemployed_rnu += 2*(1-dissent);
 
 Our campaign media is mostly reaching the workers who are already saturated with Socialist propaganda, but it must be doing *something*, or at least that is what we hope.
 
@@ -44,14 +44,31 @@ on-arrival: left_dissent -= 6; labor_dissent -= 6; center_dissent -= 6; reformis
 This has been our media course historically, and it has successfully paved over the many tensions in our party.
 
 @radio
-title: Why not fund a radio station?
-subtitle: -2 resources
+title: Create a new, <span style="color: #E57373;">RNU</span> focused radio station.
+subtitle: The -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 view-if: radio = 0
-on-arrival: radio += 1; resources -= 2; new_middle_spd += 4*(1 - dissent); old_middle_spd += 3*(1 - dissent); workers_spd += 2*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent); nationalism -= 3*(1 - dissent) if pacifism > 1; pro_republic += 3*(1-dissent) if democratization > 1
+on-arrival: radio += 1; resources -= 2; new_middle_rnu += 1*(1 - dissent); old_middle_rnu += 2*(1 - dissent); workers_rnu += 4*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent); nationalism -= 3*(1 - dissent) if pacifism > 1; pro_republic += 3*(1-dissent) if democratization > 1; front_unity -= 10; lib_angry += 1; bf_angry += 1; su_anrgy += 1;
 
-Our new radio station allows us to connect to people in a more intimate setting than before, spreading the message of socialism along with music and other popular content. Since most proletarians cannot afford family radios right now, we are reaching the middle class, a fact of which our labor comrades are painfully aware.
+Our new radio station allows us to broadcast our <span style="color: #E57373;">message</span> independently from the rest of the  <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and they have seemingly been fine with it. 
+
+However, the issue of scheduling arises. our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span> argue that since we are establishing our own media, we should have less timeslots on the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> radio.
+
+- @compromise: It's only fair.
+@compromise
+on-arrival: front_unity +=5; lib_angry -= 1; bf_angry -= 1; su_anrgy -= 1; new_middle_rnu -= 1*(1 - dissent); old_middle_rnu -+ 1*(1 - dissent); radio_compromise = 1;
+
+While it will certainly hurt us, our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span> are satisfied with our compromise. 
+
+
+- @no_compromise: We will not relinquish our well earned timeslots.
+@no_compromise
+on-arrival: front_unity -=5; lib_angry += 1; bf_angry += 1; su_anrgy += 1; worker_rnu += 2*(1 - dissent); new_middle_rnu += 2*(1 - dissent); radio_compromise = -1;
+
+Our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span> are expectedly annoyed with us, with them only being able to wrangle off some timeslots from our hands. While this may help us electorally, it has surely pissed off our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span>.
+
+
 
 @radio_2
 title: We must keep on building up our radio network.
