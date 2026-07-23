@@ -57,7 +57,7 @@ However, the issue of scheduling arises. our <span style="color: #E53935;">al</s
 
 - @compromise: It's only fair.
 @compromise
-on-arrival: front_unity +=5; lib_angry -= 1; bf_angry -= 1; su_angry -= 1; new_middle_rnu -= 1*(1 - dissent); old_middle_rnu -+ 1*(1 - dissent); radio_compromise = 1;
+on-arrival: front_unity +=5; lib_angry -= 1; bf_angry -= 1; su_angry -= 1; new_middle_rnu -= 1*(1 - dissent); old_middle_rnu -= 1*(1 - dissent); radio_compromise = 1;
 
 While it will certainly hurt us, our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span> are satisfied with our compromise. 
 
