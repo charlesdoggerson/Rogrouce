@@ -57,6 +57,7 @@ However, the issue of scheduling arises. our <span style="color: #E53935;">al</s
 
 - @compromise: It's only fair.
 - @no_compromise: We will not relinquish our well earned timeslots.
+
 @compromise
 on-arrival: front_unity +=5; lib_angry -= 1; bf_angry -= 1; su_angry -= 1; new_middle_rnu -= 1*(1 - dissent); old_middle_rnu -= 1*(1 - dissent); radio_compromise = 1;
 
