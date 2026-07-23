@@ -54,6 +54,7 @@ on-arrival: radio += 1; resources -= 2; new_middle_rnu += 1*(1 - dissent); old_m
 Our new radio station allows us to broadcast our <span style="color: #E57373;">message</span> independently from the rest of the  <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and they have seemingly been fine with it. 
 
 However, the issue of scheduling arises. our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span> argue that since we are establishing our own media, we should have less timeslots on the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> radio.
+
 - @compromise: It's only fair.
 - @no_compromise: We will not relinquish our well earned timeslots.
 
