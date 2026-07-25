@@ -204,13 +204,14 @@ Q.budget = 4;
 
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 40; // industry and trade
+Q.workers = 30; // industry and trade
 Q.old_middle = 15; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
 Q.new_middle = 15; // "new mittelstand"
-Q.rural = 40; // agriculture and forestry employment... but many of those are proletarians so...
+Q.rural = 36; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
 Q.unemployed = 10;
+Q.veteran = 14;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -234,7 +235,7 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed'];
+Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'veteran'];
 Q.parties =  ['left','rnu','su','rkp', 'bf', 'rlrp', 'lcpr', 'rnkp', 'npf', 'other'];
 
 // TODO: add 'sapd' later on
@@ -297,7 +298,16 @@ Q.unemployed_rnkp = 5;
 Q.unemployed_npf = 5;
 Q.unemployed_other = 5;
 
-
+Q.veteran_left = 0;
+Q.veteran_rkp = 5;
+Q.veteran_su = 10;
+Q.veteran_rnu = 20;
+Q.veteran_bf = 10;
+Q.veteran_rlrp = 0;
+Q.veteran_lcpr = 0;
+Q.veteran_rnkp = 20;
+Q.veteran_npf = 15;
+Q.veteran_other = 5;
 
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
