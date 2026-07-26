@@ -266,3 +266,11 @@ Veterans:
 
 
 Support for the Republic: [+ pro_republic_disp +]%
+
+
+@Front
+
+=Front
+
+**Socialist Union**
+<div style="display: flex;gap: 5px;margin-bottom: 5px;margin-left: -3px;">[? if su_leader == "Casper": <img src="img/portraits/Yank_su_1.jpg" style="width: 50%; height: 200px;"> </div>
