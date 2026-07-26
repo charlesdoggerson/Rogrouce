@@ -428,6 +428,12 @@ Q.su_angry = 1;
 //How united is the front?
 Q.front_unity = 70;
 
+//SU related stuff
+Q.su_media_yes = 0;
+Q.su_media_no = 0;
+Q.su_rkp_talks = 0;
+Q.su_leader = "Casper"
+
 
 // have we reformed these institutions to be more democratic?
 Q.judicial_reform = 0;
