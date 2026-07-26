@@ -251,6 +251,6 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 = Front
 
-<div style="display: flex;gap: 5px;margin-bottom: 5px;margin-left: -3px;">[? if su_leader == "Casper": <img src="img/portraits/Yanko_su_1.jpg" style="width: 50%; height: 200px;" ?]> </div>
- 
-why is the image not showing?
+<div style="display: flex;gap: 5px;margin-bottom: 5px;">[? if su_leader == "Casper": <img src="img/portraits/Yanko_su_1.jpg" style="width: 50%; height: 200px;" ?]> </div>
+test
+
