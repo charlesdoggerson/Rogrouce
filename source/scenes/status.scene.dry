@@ -253,8 +253,7 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 <div style="display: flex;gap: 5px;margin-bottom: 5px;">[? if su_leader == "Casper": <img src="img/portraits/Yanko_su_1.jpg" style="width: 100%; height: 200px;" ?]> </div>
 <span style="color: #E53935"> **Socialist Union** </span>
-= Goal:  reconcillation between the
-<span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span>  <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and the  
-<span style:"color: #2B0303;">le</span><span style="color: #591716;">ft</span>
+
+ Goal:  reconcillation between the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span>  <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and the   <span style:"color: #2B0303;">le</span><span style="color: #591716;">ft</span>
 
 
