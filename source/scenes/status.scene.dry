@@ -257,4 +257,16 @@ Support for the Republic: [+ pro_republic_disp +]%
 
  <p style="font-weight: bold; text-align: center;">Goal: [+ su_goal +]</p>
 
+<div style="display: flex;gap: 5px;margin-bottom: 5px;">[? if bf_leader == "Philip": <img src="img/portraits/Alex_bf_1.jpg" style="width: 100%; height: 200px;" ?]> </div>
+<span style="color: #2E7D32"> **Peasant Front** </span>
+<p style="font-weight: bold; text-align: center;">**Philip  Brodersen**</p>
+
+ <p style="font-weight: bold; text-align: center;">Goal: [+ bf_goal +]</p>
+
+<div style="display: flex;gap: 5px;margin-bottom: 5px;">[? if rlrp_leader == "Peter": <img src="img/portraits/Alex_rlrp_1.png" style="width: 100%; height: 200px;" ?]> </div>
+<span style="color: #DAB74C"> **Rogroucean Liberal Republican Party** </span>
+<p style="font-weight: bold; text-align: center;">**Peter Jepsen**</p>
+
+ <p style="font-weight: bold; text-align: center;">Goal: [+ rlrp_goal +]</p>
+
 
