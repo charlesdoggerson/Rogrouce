@@ -432,10 +432,16 @@ Q.front_unity = 70;
 Q.su_media_yes = 0;
 Q.su_media_no = 0;
 Q.su_rkp_talks = 0;
-Q.su_leader = "Casper";
-Q.su_goal = 'reconciliation between the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span> <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and the <span style="color: #2B0303;">le</span><span style="color: #591716;">ft</span>';
+Q.su_leader = "Casper  Clemmensen";
+Q.su_goal = 'Reconciliation between the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span> <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and the <span style="color: #2B0303;">le</span><span style="color: #591716;">ft</span>';
 
+//BF stuff
+Q.bf_leader = "Philip Brodersen";
+Q.bf_goal = 'Expand the influence of the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span> <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> in the countryside and promote <span style="color: #2E7D32"> agrarian </span> policies;
 
+//RLRP stuff
+Q.rlrp_leader = "Peter Jepsen";
+Q.rlrp_goal = "Keep the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> united";
 // have we reformed these institutions to be more democratic?
 Q.judicial_reform = 0;
 Q.bureaucratic_reform = 0;
