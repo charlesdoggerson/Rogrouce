@@ -10,110 +10,72 @@ max-visits: 12
 
 = Inter-Party Relationships
 
-The SPD cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Weimar Coalition of the SPD, Center, and Democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+The <span style="color: #E57373;">RNU</span> has only gone so far because of our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span>. Though beyond them, we could also try and reach out to the <span style="color: #DAB74C;">le</span><span style="color: #591716;">ft</span> and to the non oligarchic <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span>. 
 
-- @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
-- @center: Strengthen our bonds with the Catholic Center Party.
-- @kpd: Work towards repairing relationships with the Communist Party.
-- @spd_alone: The SPD can stand alone for now.
+- @allies: Strengthen our bonds with the parties in the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span> <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span>.
+- @right: Strengthen our bond with the <span style="color: #303F9F;">National Conservatives</span> and the <span style="color: #F57C00;">Liberal Constitutionalists</span> parties on the right.
+- @liberals: Strengthen our bonds with the <span style="color: #DAB74C;">Lib</span><span style="color: #F57C00;">erals</span>. 
+- @left: Look towards reconciliation with the <span style="color: #591716;">communists</span> but also the broader <span style="color: #DAB74C;">le</span><span style="color: #591716;">ft</span>
+- @bf: Lets increase ties with the <span style="color: #2E7D32;">Peasant Front</span>.
+- @su: How about looking to improving our standing with the <span style="color: #E53935;">Socialist Union</span>?
+- @lonely: Maybe not now.
 - @easy_discard
 
-
-@kpd
+@allies
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; kpd_inter_party_seen += 1
-go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and kpd_coalition_success = 0 and (kpd_relation < 40 or kpd_rectified_history = 1); kpd_rectification_of_history if kpd_relation >= 40 and kpd_rectified_history = 0; kpd_2 if kpd_coalition_success = 1 and kpd_rectified_history = 1
+on-arrival: resources -= 1; su_relation += 10*(1-dissent); bf_relation +=10*(1-dissent); rlrp_relation +=10*(1-dissent); front_unity += 10;
 
-@kpd_1
-on-arrival: kpd_relation += 6*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 2; dvp_relation -= 3
-
-The communists are suspicious of our overtures, especially the Stalinist leadership, who persist in calling us "social fascists". However, connections are made at the grassroots and local levels.
-
-@kpd_rectification_of_history
-
-One stumbling block for our relations with the KPD is our history of conflict, dating back to 1918 and 1919. The KPD is especially contemptuous of Gustav Noske, the SPD "bloodhound" who reportedly ordered the violent suppression of the Spartacist uprising and other KPD revolts. They also blame us for the deaths of Rosa Luxemburg and Karl Liebknecht, two SPD-turned-KPD leaders who were killed during the suppression of the uprising.
-
-For further improvements in KPD relations, it might be necessary to expel Noske, and hold some sort of commemoration for Luxemburg and Liebknecht.
-
-- @yes_history: Yes, we must apologize for our past actions.
-- @no_history: No, we have no need to apologize.
-
-@yes_history
-on-arrival: reformist_dissent += 12; reformist_strength -= 2; neorevisionist_dissent += 5; left_dissent -= 6; left_strength += 5; kpd_rectified_history = 1; z_relation -= 6; dvp_relation -= 6; ddp_relation -= 4; kpd_relation += 8*(1-dissent); coalition_dissent += 1
-
-As part of normalizing relations with the KPD, we have to acknowledge the wrongdoings of our past. We have expelled Noske, and have held public commemorations for those killed by troops during the uprisings.
-
-This leads to tensions with the moderates and reformists within our party, and criticism from the conservative and liberal parties.
-
-@no_history
-on-arrival: kpd_relation -= 3
-
-We have no need to apologize for the actions of Ebert and Noske; it is the Communists' fault for launching a violent insurrection.
+We have improved our relations with the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span>.
 
 
-@kpd_2
-on-arrival: kpd_relation += 8*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 3; dvp_relation -= 3
-
-After the success of the coalition government with the KPD, they are much more amenable to us.
-
-@kpd_blutmai
-on-arrival: kpd_relation += 3*(1 - dissent); reformist_dissent += 1
-
-After the events of Blütmai, reconciling with the Communists is difficult, if not impossible. Nevertheless, we must try.
-
-@center
+@right
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"
-go-to: center_op if z_in_government = 1 and spd_in_government = 0 and chancellor != "Brüning"; center_coalition if spd_in_government = 1 and z_in_government = 1; center_bruning if chancellor = "Brüning"
+on-arrival: resources -= 1; rnkp_relation += 5*(1 - dissent); lcpr_relation += 5*(1 - dissent); left_dissent += 4;
 
-@center_op
-on-arrival: z_relation += 5*(1 - dissent)
+The <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span> has a history of neutrality or outright cooperation with the oligarchs, though this not mean we cannot ally them. Our left faction expresses displeasure, but the <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span> might be a needed ally against the oligarchs.
 
-We are currently in opposition to the Center-led government, but that does not preclude the general building of feelings of good will.
 
-@center_coalition
-on-arrival: z_relation += 8*(1 - dissent)
 
-We are currently coalition partners with them, so improving relations comes naturally.
-
-@center_bruning
-on-arrival: z_relation += 5*(1 - dissent)
-
-The Brüning semi-autocratic regime makes building friendly relations difficult, but not impossible.
 
 @liberals
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; ddp_relation += 5*(1 - dissent)
-go-to: dvp_stresemann if stresemann_dead = 0; dvp_loss if stresemann_dead = 1 and year <= 1930; dvp_moribund if year > 1930
+on-arrival: resources -= 1; rlrp_relation += 6*(1 - dissent); lcpr_relation += 6*(1 - dissent); left_dissent += 2;
 
-The [+ ddp_name +] has been one of our closest allies through the course of the Republic.
+The <span style="color: #DAB74C;">Lib</span><span style="color: #F57C00;">erals</span> are receptive to our efforts, especially the <span style="color: #DAB74C;">RLRP</span>. The left faction of our party is annoyed that we are negotiating with the <span style="color: #F57C00;">Liberal Constitutionalists</span>.
 
-@dvp_stresemann
-on-arrival: dvp_relation += 8*(1 - dissent)
 
-Gustav Stresemann, the leader of the DVP is the best foreign policy leaders of the republic, and while he has previously expressed monarchist tendencies, he has been friendly towards us.
+@left
+subtitle: -1 resources The <span style="color: #E53935;">SU</span> will certainly be pleased.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; rkp_relation += 6*(1 - dissent); su_relation += 6*(1 - dissent); reformist_dissent += 2; lcpr_relation -= 2; rnkp_relation -=2; left_dissent -= 5;
 
-@dvp_loss
-on-arrival: dvp_relation += 5*(1 - dissent)
+The <span style="color: #591716;">RKP</span> used to be a member of the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and have generally been friendly, albeit wary, towards us. The <span style="color: #E53935;">SU</span> and our left faction are also pleased with us, since this could lead to future reconcilliation and cooperation.
 
-With the death of Gustav Stresemann, the DVP is much less likely to be accommodating of us. In addition, the liberal parties are electorally in decline, so perhaps our efforts are best spent elsewhere.
+@bf
+subtitle: -1 resources 
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; bf_relation += 10*(1 - dissent); 
 
-However, given the influence of the DVP among the other right-leaning parties [? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+The <span style="color: #2E7D32;">Peasant Front</span> is one of our closest allies, so increasing our relations comes naturally.
 
-@dvp_moribund
-on-arrival: dvp_relation += 5*(1 - dissent)
+@su
+subtitle: -1 resources 
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; su_relation += 10*(1 - dissent); 
 
-The liberal parties (both the [+ ddp_name +] and DVP) are electorally moribund, so perhaps our efforts are best spent elsewhere.
+Despite being a splinter party of both <span style="color: #E57373;">us</span> and the <span style="color: #591716;">RKP</span>, the <span style="color: #E53935;">SU</span> is one of our closest allies, but they would've preffered us focusing on the broader <span style="color: #DAB74C;">le</span><span style="color: #591716;">ft</span> rather than just them.
 
-However, given the influence of the DVP among the other right-leaning parties[? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
 
-@spd_alone
+@Lonely
 
 Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
 
