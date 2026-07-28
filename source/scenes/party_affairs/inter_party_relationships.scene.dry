@@ -10,12 +10,12 @@ max-visits: 12
 
 = Inter-Party Relationships
 
-The <span style="color: #E57373;">RNU</span> has only gone so far because of our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span>. Though beyond them, we could also try and reach out to the <span style="color: #DAB74C;">le</span><span style="color: #2B0303;">ft</span> and to the non oligarchic <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span>. 
+The <span style="color: #E57373;">RNU</span> has only gone so far because of our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span>. Though beyond them, we could also try and reach out to the <span style="color: ##591716;">le</span><span style="color: #2B0303;">ft</span> and to the non oligarchic <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span>. 
 
 - @allies: Strengthen our bonds with the parties in the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span> <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span>.
 - @right: Strengthen our bond with the <span style="color: #303F9F;">National Conservatives</span> and the <span style="color: #F57C00;">Liberal Constitutionalists</span> parties on the right.
 - @liberals: Strengthen our bonds with the <span style="color: #DAB74C;">Lib</span><span style="color: #F57C00;">erals</span>. 
-- @left: Look towards reconciliation with the <span style="color: #591716;">communists</span> but also the broader <span style="color: #2B0303;">le</span><span style="color: #591716;">ft</span>
+- @left: Look towards reconciliation with the <span style="color: #591716;">communists</span> but also the broader <span style="color: #591716;">le</span><span style="color: #591716;">ft</span>
 - @bf: Lets increase ties with the <span style="color: #2E7D32;">Peasant Front</span>.
 - @su: How about looking to improving our standing with the <span style="color: #E53935;">Socialist Union</span>?
 - @lonely: Maybe not now.
@@ -72,7 +72,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; su_relation += 10*(1 - dissent); 
 
-Despite being a splinter party of both <span style="color: #E57373;">us</span> and the <span style="color: #591716;">RKP</span>, the <span style="color: #E53935;">SU</span> is one of our closest allies, but they would've preffered us focusing on the broader <span style="color: #DAB74C;">le</span><span style="color: #2B0303;">ft</span> rather than just them.
+Despite being a splinter party of both <span style="color: #E57373;">us</span> and the <span style="color: #591716;">RKP</span>, the <span style="color: #E53935;">SU</span> is one of our closest allies, but they would've preffered us focusing on the broader <span style="color: #591716;">le</span><span style="color: #2B0303;">ft</span> rather than just them.
 
 
 @lonely
