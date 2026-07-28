@@ -75,7 +75,7 @@ on-arrival: resources -= 1; su_relation += 10*(1 - dissent);
 Despite being a splinter party of both <span style="color: #E57373;">us</span> and the <span style="color: #591716;">RKP</span>, the <span style="color: #E53935;">SU</span> is one of our closest allies, but they would've preffered us focusing on the broader <span style="color: #DAB74C;">le</span><span style="color: #591716;">ft</span> rather than just them.
 
 
-@Lonely
+@lonely
 
 Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
 
