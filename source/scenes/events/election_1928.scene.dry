@@ -243,7 +243,7 @@ data = [
 },
 {
         "id": "left_s",
-        "legend": "Syndicalists
+        "legend": "Syndicalists"
         "name": "Syndicalists",
         "seats": Math.round(Q.left_s_r*7),
 },
@@ -328,11 +328,11 @@ data = data.concat([
         "seats": Math.round(Q.rnu_labor_r*7),
 },
 {
-        "id": "rnu_reformist",
+        "id": "rnu_r",
         "legend": "RNU Reformist",
         "name": "RNU Reformist",
         "seats": Math.round(Q.rnu_reformist_r*7),
-}
+},
 {
         "id": "bf",
         "legend": "BF",
@@ -348,7 +348,7 @@ data = data.concat([
 {
         "id": "bf_s",
         "legend": "Peasant socialists",
-        "name": "P[easant socialists",
+        "name": "Peasant socialists",
         "seats": Math.round(Q.bf_s_r*7),
 },
 {
