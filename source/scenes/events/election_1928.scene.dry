@@ -298,7 +298,7 @@ data = data.concat([
         "seats": Math.round(Q.rnu_c_r*7),
 },
 {
-        "id": "rnu_labor",
+        "id": "rnu_la",
         "legend": "RNU Labor",
         "name": "RNU Labor",
         "seats": Math.round(Q.rnu_labor_r*7),
