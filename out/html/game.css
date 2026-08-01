@@ -584,22 +584,22 @@ table {
 .seat.left_nb {
     fill: #7A4C4C;
 }
-.seat.rkp_i {
-    fill: #A60600;
-}
 .seat.rkp_l {
     fill: #F7D0202;
+}
+.seat.rkp_i {
+    fill: #A60600;
 }
 .seat.rkp_r {
     fill: #752A2A;
 }
-.seat.su_c{
-    fill: #CC322F;
+.seat.su_l{
+    fill: #5C3131;
     stroke: var(--border-color);
     stroke-width: 0.5px;
 }
-.seat.su_l{
-    fill: #5C3131;
+.seat.su_c{
+    fill: #CC322F;
     stroke: var(--border-color);
     stroke-width: 0.5px;
 }
@@ -608,13 +608,33 @@ table {
     stroke: var(--border-color);
     stroke-width: 0.5px;
 }
-.seat.bf_r {
-    fill: #6FA372;
+.seat.rnu_l {
+    fill: #9E3A3A;
     stroke: var(--border-color);
-    stroke-width: 0.5px;
+    stroke-width: 1.5px;
+}
+.seat.rnu_c {
+    fill: #9E3A3A;
+    stroke: var(--border-color);
+    stroke-width: 1.5px;
+}
+.seat.rnu_la {
+    fill: #B54848;
+    stroke: var(--border-color);
+    stroke-width: 1.5px;
+}
+.seat.rnu_r {
+    fill: #F76D6D;
+    stroke: var(--border-color);
+    stroke-width: 1.5px;
 }
 .seat.bf_s {
     fill: #99E043;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.bf_r {
+    fill: #6FA372;
     stroke: var(--border-color);
     stroke-width: 0.5px;
 }
