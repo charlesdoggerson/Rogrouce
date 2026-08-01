@@ -174,11 +174,51 @@ Q.reichswehr_goal_completed = 0;
 Q.strike_term_seen = 0;
 
 Q.z_minus_bvp_r = Q.z_r - 3;
+Q.lu_r = Q.rnkp_r * 0.3;
+Q.rnkp_minus_lu_r = Q.rnkp_r - Q.lu_r;
 
 // understanding the enemy
 if (Q.nsdap_r >= 15) {
     Q.understanding_enemy_timer = 2;
 }
+
+Q.left_a_r = Math.floor(Q.left_r*(Q.left_a_strength/100));
+Q.left_s_r = Math.floor(Q.left_r*(Q.left_s_strength/100));
+Q.left_nb_r = Math.floor(Q.left_r*(Q.left_nb_strength/100));
+
+
+Q.su_c_r = Math.floor(Q.su_r * (Q.su_c_strength / 100));
+Q.su_l_r = Math.floor(Q.su_r * (Q.su_l_strength / 100));
+Q.su_r_r = Math.floor(Q.su_r * (Q.su_r_strength / 100));
+
+Q.bf_r_r = Math.floor(Q.bf_r * (Q.bf_r_strength / 100));
+Q.bf_s_r = Math.floor(Q.bf_r * (Q.bf_s_strength / 100));
+Q.bf_c_r = Math.floor(Q.bf_r * (Q.bf_c_strength / 100));
+
+Q.rlrp_p_r = Math.floor(Q.rlrp_r * (Q.rlrp_p_strength / 100));
+Q.rlrp_r_r = Math.floor(Q.rlrp_r * (Q.rlrp_r_strength / 100));
+Q.rlrp_c_r = Math.floor(Q.rlrp_r * (Q.rlrp_c_strength / 100));
+
+Q.rkp_i_r = Math.floor(Q.rkp_r * (Q.rkp_i_strength / 100));
+Q.rkp_l_r = Math.floor(Q.rkp_r * (Q.rkp_l_strength / 100));
+Q.rkp_r_r = Math.floor(Q.rkp_r * (Q.rkrp_r_strength / 100));  // using the original typo name
+
+Q.rnkp_yc_r = Math.floor(Q.rnkp_r * (Q.rnkp_yc_strength / 100));
+Q.rnkp_oc_r = Math.floor(Q.rnkp_r * (Q.rnkp_oc_strength / 100));
+Q.rnkp_rc_r = Math.floor(Q.rnkp_r * (Q.rnkp_rc_strength / 100));
+
+Q.lcpr_c_r = Math.floor(Q.lcpr_r * (Q.lcpr_c_strength / 100));
+Q.lcpr_n_r = Math.floor(Q.lcpr_r * (Q.lcpr_n_strength / 100));
+Q.lcpr_i_r = Math.floor(Q.lcpr_r * (Q.lcpr_i_strength / 100));
+
+Q.npf_c_r  = Math.floor(Q.npf_r * (Q.npf_c_strength  / 100));
+Q.npf_og_r = Math.floor(Q.npf_r * (Q.npf_og_strength / 100));
+Q.npf_r_r  = Math.floor(Q.npf_r * (Q.npf_r_strength  / 100));
+
+Q.rnu_l_r = Math.floor(Q.rnu_r * (Q.left_strength  / 100));
+Q.rnu_c_r = Math.floor(Q.rnu_r * (Q.center_strength  / 100));
+Q.rnu_labor_r = Math.floor(Q.rnu_r * (Q.labor_strength  / 100));
+Q.rnu_reformist_r = Math.floor(Q.rnu_r * (Q.reformist_strength  / 100));
 
 var election_result = {'date': new Date(Q.year, Q.month - 1)};
 for (var party of Q.parties) {
@@ -191,66 +231,234 @@ on-display: {!
 data = [
     {
         "id": "left",
-        "legend": "left",
-        "name": "left",
+        "legend": "Left",
+        "name": "Left",
         "seats": Math.round(Q.left_r*7),
-    }
+},
+{
+        "id": "left_a",
+        "legend": "Anarchists",
+        "name": "Anarchists",
+        "seats": Math.round(Q.left_a_r*7),
+},
+{
+        "id": "left_s",
+        "legend": "Syndicalists
+        "name": "Syndicalists",
+        "seats": Math.round(Q.left_s_r*7),
+},
+{
+        "id": "left_nb",
+        "legend": "National Bolsheviks",
+        "name": "National Bolsheviks",
+        "seats": Math.round(Q.left_nb_r*7),
+},
 ];
 data = data.concat([
-    {
+{
         "id": "rkp",
         "legend": "RKP",
         "name": "RKP",
         "seats": Math.round(Q.rkp_r*7),
-    },
-    {
+},
+{
+        "id": "rkp_i",
+        "legend": "RKP Internationalists",
+        "name": "RKP Internationalists",
+        "seats": Math.round(Q.rkp_i_r*7),
+},
+{
+        "id": "rkp_l",
+        "legend": "RKP Left Opposition",
+        "name": "RKP Left Opposition",
+        "seats": Math.round(Q.rkp_l_r*7),
+},
+{
+        "id": "rkp_r",
+        "legend": "RKP Right Opposition",
+        "name": "RKP Right Opposition",
+        "seats": Math.round(Q.rkp_r_r*7),
+},
+{
         "id": "su",
         "legend": "SU",
         "name": "SU",
         "seats": Math.round(Q.su_r*7),
-    },
-    {
+},
+{
+        "id": "su_c",
+        "legend": "SU centrists",
+        "name": "SU centrists",
+        "seats": Math.round(Q.su_c_r*7),
+},
+{
+        "id": "su_l",
+        "legend": "SU leftists",
+        "name": "SU leftists",
+        "seats": Math.round(Q.su_l_r*7),
+},
+{
+        "id": "su_r",
+        "legend": "SU rightists",
+        "name": "SU rightists",
+        "seats": Math.round(Q.su_r_r*7),
+},
+{
         "id": "rnu",
         "legend": "RNU",
         "name": "RNU",
         "seats": Math.round(Q.rnu_r*7),
-    },
-    {
+},
+{
+        "id": "rnu_l",
+        "legend": "RNU Left",
+        "name": "RNU Left",
+        "seats": Math.round(Q.rnu_l_r*7),
+},
+{
+        "id": "rnu_c",
+        "legend": "RNU Centrists",
+        "name": "RNU Centrists",
+        "seats": Math.round(Q.rnu_c_r*7),
+},
+{
+        "id": "rnu_labor",
+        "legend": "RNU Labor",
+        "name": "RNU Labor",
+        "seats": Math.round(Q.rnu_labor_r*7),
+},
+{
+        "id": "rnu_reformist",
+        "legend": "RNU Reformist",
+        "name": "RNU Reformist",
+        "seats": Math.round(Q.rnu_reformist_r*7),
+}
+{
         "id": "bf",
         "legend": "BF",
         "name": "BF",
         "seats": Math.round(Q.bf_r*7),
-    },
-    {
+},
+{
+        "id": "bf_r",
+        "legend": "Peasant Republicans",
+        "name": "Peasant Republicans",
+        "seats": Math.round(Q.bf_r_r*7),
+},
+{
+        "id": "bf_s",
+        "legend": "Peasant socialists",
+        "name": "P[easant socialists",
+        "seats": Math.round(Q.bf_s_r*7),
+},
+{
+        "id": "bf_c",
+        "legend": "Peasant Conservatives",
+        "name": "Peasant Conservatives",
+        "seats": Math.round(Q.bf_c_r*7),
+},
+{
         "id": "rlrp",
         "legend": "RLRP",
         "name": "RLRP",
         "seats": Math.round(Q.rlrp_r*7),
-    },
-    {
+},
+{
+        "id": "rlrp_p",
+        "legend": "Peoples Liberals",
+        "name": "Peoples Liberals",
+        "seats": Math.round(Q.rlrp_p_r*7),
+},
+{
+        "id": "rlrp_r",
+        "legend": "Republican Liberals",
+        "name": "Republican Liberals",
+        "seats": Math.round(Q.rlrp_r_r*7),
+},
+{
+        "id": "rlrp_c",
+        "legend": "Constitutional Liberals",
+        "name": "Constitutional Liberals",
+        "seats": Math.round(Q.rlrp_c_r*7),
+},
+{
         "id": "lcpr",
         "legend": "LCPR",
         "name": "LCPR",
         "seats": Math.round(Q.lcpr_r*7),
-    },
-    {
+},
+{
+        "id": "lcpr_c",
+        "legend": "Constitutional Liberals",
+        "name": "Constitutional Liberals",
+        "seats": Math.round(Q.lcpr_c_r*7),
+},
+{
+        "id": "lcpr_n",
+        "legend": "National Liberals",
+        "name": "National Liberals",
+        "seats": Math.round(Q.lcpr_n_r*7),
+},
+{
+        "id": "lcpr_i",
+        "legend": "Industrialists",
+        "name": "Industrialists",
+        "seats": Math.round(Q.lcpr_i_r*7),
+},
+{
         "id": "rnkp",
         "legend": "RNKP",
         "name": "RNKP",
         "seats": Math.round(Q.rnkp_r*7),
-    },
-    {
+},
+{
+        "id": "rnkp_yc",
+        "legend": "RNKP Young Conservatives",
+        "name": "RNKP Young Conservatives",
+        "seats": Math.round(Q.rnkp_yc_r*7),
+},
+{
+        "id": "rnkp_oc",
+        "legend": "RNKP Old Conservatives",
+        "name": "RNKP Old Conservatives",
+        "seats": Math.round(Q.rnkp_oc_r*7),
+},
+{
+        "id": "rnkp_rc",
+        "legend": "RNKP Right Conservatives",
+        "name": "RNKP Right Conservatives",
+        "seats": Math.round(Q.rnkp_rc_r*7),
+},
+{
+        "id": "other",
+        "legend": "Others",
+        "name": "Others",
+        "seats": Math.round(Q.other_r*7),
+},
+{
         "id": "npf",
         "legend": "NPF",
         "name": "NPF",
         "seats": Math.round(Q.npf_r*7),
-    },
-    {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Math.round(Q.other_r*7),
-    },
+},
+{
+        "id": "npf_c",
+        "legend": "NPF Party Centrists",
+        "name": "NPF Party Centrists",
+        "seats": Math.round(Q.npf_c_r*7),
+},
+{
+        "id": "npf_og",
+        "legend": "NPF Old Guard",
+        "name": "NPF Old Guard",
+        "seats": Math.round(Q.npf_og_r*7),
+},
+{
+        "id": "npf_r",
+        "legend": "NPF Renewelists",
+        "name": "NPF Renewelists",
+        "seats": Math.round(Q.npf_r_r*7),
+},
 ]);
 
 if (window && d3) {
