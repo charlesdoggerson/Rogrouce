@@ -229,12 +229,6 @@ Q.election_records.push(election_result);
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
 data = [
-    {
-        "id": "left",
-        "legend": "Left",
-        "name": "Left",
-        "seats": Math.round(Q.left_r*7),
-},
 {
         "id": "left_a",
         "legend": "Anarchists",
@@ -256,12 +250,6 @@ data = [
 ];
 data = data.concat([
 {
-        "id": "rkp",
-        "legend": "RKP",
-        "name": "RKP",
-        "seats": Math.round(Q.rkp_r*7),
-},
-{
         "id": "rkp_i",
         "legend": "RKP Internationalists",
         "name": "RKP Internationalists",
@@ -280,12 +268,6 @@ data = data.concat([
         "seats": Math.round(Q.rkp_r_r*7),
 },
 {
-        "id": "su",
-        "legend": "SU",
-        "name": "SU",
-        "seats": Math.round(Q.su_r*7),
-},
-{
         "id": "su_c",
         "legend": "SU centrists",
         "name": "SU centrists",
@@ -302,12 +284,6 @@ data = data.concat([
         "legend": "SU rightists",
         "name": "SU rightists",
         "seats": Math.round(Q.su_r_r*7),
-},
-{
-        "id": "rnu",
-        "legend": "RNU",
-        "name": "RNU",
-        "seats": Math.round(Q.rnu_r*7),
 },
 {
         "id": "rnu_l",
@@ -334,12 +310,6 @@ data = data.concat([
         "seats": Math.round(Q.rnu_reformist_r*7),
 },
 {
-        "id": "bf",
-        "legend": "BF",
-        "name": "BF",
-        "seats": Math.round(Q.bf_r*7),
-},
-{
         "id": "bf_r",
         "legend": "Peasant Republicans",
         "name": "Peasant Republicans",
@@ -356,12 +326,6 @@ data = data.concat([
         "legend": "Peasant Conservatives",
         "name": "Peasant Conservatives",
         "seats": Math.round(Q.bf_c_r*7),
-},
-{
-        "id": "rlrp",
-        "legend": "RLRP",
-        "name": "RLRP",
-        "seats": Math.round(Q.rlrp_r*7),
 },
 {
         "id": "rlrp_p",
@@ -382,12 +346,6 @@ data = data.concat([
         "seats": Math.round(Q.rlrp_c_r*7),
 },
 {
-        "id": "lcpr",
-        "legend": "LCPR",
-        "name": "LCPR",
-        "seats": Math.round(Q.lcpr_r*7),
-},
-{
         "id": "lcpr_c",
         "legend": "Constitutional Liberals",
         "name": "Constitutional Liberals",
@@ -404,12 +362,6 @@ data = data.concat([
         "legend": "Industrialists",
         "name": "Industrialists",
         "seats": Math.round(Q.lcpr_i_r*7),
-},
-{
-        "id": "rnkp",
-        "legend": "RNKP",
-        "name": "RNKP",
-        "seats": Math.round(Q.rnkp_r*7),
 },
 {
         "id": "rnkp_yc",
@@ -434,12 +386,6 @@ data = data.concat([
         "legend": "Others",
         "name": "Others",
         "seats": Math.round(Q.other_r*7),
-},
-{
-        "id": "npf",
-        "legend": "NPF",
-        "name": "NPF",
-        "seats": Math.round(Q.npf_r*7),
 },
 {
         "id": "npf_c",
