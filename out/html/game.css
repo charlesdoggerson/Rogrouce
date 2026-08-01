@@ -575,6 +575,109 @@ table {
 .seat.npf {
     fill: #654D5A;
 }
+.seat.left_a {
+    fill: #420202;
+}
+.seat.left_s {
+    fill: #0A0202;
+}
+.seat.left_nb {
+    fill: #7A4C4C;
+}
+.seat.rkp_i {
+    fill: #A60600;
+}
+.seat.rkp_l {
+    fill: #F7D0202;
+}
+.seat.rkp_r {
+    fill: #752A2A;
+}
+.seat.su_c{
+    fill: #CC322F;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.su_l{
+    fill: #5C3131;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.su_r{
+    fill: #EB6767;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.bf_r {
+    fill: #6FA372;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.bf_s {
+    fill: #99E043;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.bf_c {
+    fill: #179977;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.rlrp_p {
+    fill: #CCB77A;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.rlrp_r {
+    fill: #DAB74C;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.rlrp_c {
+    fill: #B0982C;
+    stroke: var(--border-color);
+    stroke-width: 0.5px;
+}
+.seat.lcpr_c {
+    fill: #B0802C;
+}
+.seat.lcpr_n {
+    fill: #BD7915;
+}
+.seat.lcpr_i {
+    fill: #855C14;
+}
+.seat.rnkp_yc {
+    fill: #5C649C;
+}
+.seat.rnkp_lul {
+    fill: #436E45;
+}
+.seat.rnkp_oc {
+    fill: #263B96;
+}
+.seat.rnkp_luc {
+    fill: #174A18;
+}
+.seat.rnkp_rc {
+    fill: #102347;
+}
+.seat.rnkp_lub {
+    fill: #063302;
+}
+.seat.other {
+    fill: #909090;
+}
+.seat.npf_c {
+    fill: #604D65;
+}
+.seat.npf_og {
+    fill: #654D5A;
+}
+.seat.npf_r {
+    fill: #302329;
+}
+
 
 .tooltip-text {
     text-decoration: underline;
