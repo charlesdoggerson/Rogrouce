@@ -430,147 +430,28 @@ go-to: coalition_menu
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
-{!<style>
-.party-row {
-    cursor: pointer;
-    user-select: none;
-}
-.party-row:hover {
-    background-color: #f0f0f0;
-}
-.faction-row {
-    display: none;
-    background-color: #fafafa;
-    font-size: 0.92em;
-}
-.faction-row td {
-    padding-left: 28px !important;
-}
-.box {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin-right: 6px;
-    vertical-align: middle;
-}
-</style>!}
+{!<table>!} 
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E57373; outline: 2px; outline-style: solid;'> </div> !} RNU: {!</td><td>!} [+ rnu_r +]% {!</td><td>!} [+ str_change_rnu +] {!</td></tr>!}
 
-{!<table id="results-table">!}
-{!<tr>
-    <td><b>Party</b></td>
-    <td><b>Vote share</b></td>
-    <td><b>% Change</b></td>
-</tr>!}
+{!<tr><td><div class="box" style='background-color:#2B0303'> </div> !}FVA: {!</td><td>!} [+ left_r +]% {!</td><td>!} [+ str_change_left +] {!</td></tr>!}
 
-<!-- RNU -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#E57373; outline: 2px solid;"></div> <b>RNU</b></td>
-    <td><b>[+ rnu_r +]%</b></td>
-    <td><b>[+ str_change_rnu +]</b></td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ RNU Left</td><td>[+ rnu_l_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ RNU Centrists</td><td>[+ rnu_c_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ RNU Labor</td><td>[+ rnu_labor_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ RNU Reformist</td><td>[+ rnu_reformist_r +]%</td><td></td></tr>!}
+{!<tr><td><div class="box" style='background-color:#591716'> </div> !}RKP: {!</td><td>!} [+ rkp_r +]% {!</td><td>!} [+ str_change_rkp +] {!</td></tr>!}
 
-<!-- FVA / Left -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#2B0303"></div> <b>FVA</b></td>
-    <td>[+ left_r +]%</td>
-    <td>[+ str_change_left +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ Anarchists</td><td>[+ left_a_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Syndicalists</td><td>[+ left_s_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ National Bolsheviks</td><td>[+ left_nb_r +]%</td><td></td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E53935'> </div> !} SU: {!</td><td>!} [+ su_r +]% {!</td><td>!} [+ str_change_su +] {!</td></tr>!}
 
-<!-- RKP -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#591716"></div> <b>RKP</b></td>
-    <td>[+ rkp_r +]%</td>
-    <td>[+ str_change_rkp +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ RKP Internationalists</td><td>[+ rkp_i_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ RKP Left Opposition</td><td>[+ rkp_l_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ RKP Right Opposition</td><td>[+ rkp_r_r +]%</td><td></td></tr>!}
+{!<tr><td><div class="box" style='background-color:#2E7D32'> </div> !} BF: {!</td><td>!} [+ bf_r +]% {!</td><td>!} [+ str_change_bf +] {!</td></tr>!}
 
-<!-- SU -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#E53935"></div> <b>SU</b></td>
-    <td>[+ su_r +]%</td>
-    <td>[+ str_change_su +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ SU centrists</td><td>[+ su_c_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ SU leftists</td><td>[+ su_l_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ SU rightists</td><td>[+ su_r_r +]%</td><td></td></tr>!}
+{!<tr><td><div class="box" style='background-color:#DAB74C'> </div> !} RLRP: {!</td><td>!} [+ rlrp_r +]% {!</td><td>!} [+ str_change_rlrp +] {!</td></tr>!}
 
-<!-- BF -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#2E7D32"></div> <b>BF</b></td>
-    <td>[+ bf_r +]%</td>
-    <td>[+ str_change_bf +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ Peasant Republicans</td><td>[+ bf_r_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Peasant socialists</td><td>[+ bf_s_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Peasant Conservatives</td><td>[+ bf_c_r +]%</td><td></td></tr>!}
+{!<tr><td><div class="box" style='background-color:#F57C00'> </div> !} LCPR: {!</td><td>!} [+ lcpr_r +]% {!</td><td>!} [+ str_change_lcpr +] {!</td></tr>!}
 
-<!-- RLRP -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#DAB74C"></div> <b>RLRP</b></td>
-    <td>[+ rlrp_r +]%</td>
-    <td>[+ str_change_rlrp +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ Peoples Liberals</td><td>[+ rlrp_p_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Republican Liberals</td><td>[+ rlrp_r_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Constitutional Liberals</td><td>[+ rlrp_c_r +]%</td><td></td></tr>!}
+{!<tr><td><div class="box" style='background-color:#303F9F'> </div> !} RNKP: {!</td><td>!} [+ rnkp_r +]% {!</td><td>!} [+ str_change_rnkp +] {!</td></tr>!}
+ 
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
 
-<!-- LCPR -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#F57C00"></div> <b>LCPR</b></td>
-    <td>[+ lcpr_r +]%</td>
-    <td>[+ str_change_lcpr +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ Constitutional Liberals</td><td>[+ lcpr_c_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ National Liberals</td><td>[+ lcpr_n_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Industrialists</td><td>[+ lcpr_i_r +]%</td><td></td></tr>!}
-
-<!-- RNKP -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#303F9F"></div> <b>RNKP</b></td>
-    <td>[+ rnkp_r +]%</td>
-    <td>[+ str_change_rnkp +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ Young Conservatives</td><td>[+ rnkp_yc_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Old Conservatives</td><td>[+ rnkp_oc_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ Right Conservatives</td><td>[+ rnkp_rc_r +]%</td><td></td></tr>!}
-
-<!-- Others -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#a0a0a0"></div> <b>Others</b></td>
-    <td>[+ other_r +]%</td>
-    <td>[+ str_change_other +]</td>
-</tr>!}
-
-<!-- NPF -->
-{!<tr class="party-row" onclick="toggleFactions(this)">
-    <td><div class="box" style="background-color:#654D5A"></div> <b>NPF</b></td>
-    <td>[+ npf_r +]%</td>
-    <td>[+ str_change_npf +]</td>
-</tr>!}
-{!<tr class="faction-row"><td>↳ NPF Party Centrists</td><td>[+ npf_c_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ NPF Old Guard</td><td>[+ npf_og_r +]%</td><td></td></tr>!}
-{!<tr class="faction-row"><td>↳ NPF Renewelists</td><td>[+ npf_r_r +]%</td><td></td></tr>!}
-
+{!<tr><td><div class="box" style='background-color:#654D5A'> </div> !} NPF: {!</td><td>!} [+ npf_r +]% {!</td><td>!} [+ str_change_npf +] {!</td></tr>!}
 {!</table>!}
-
-{!<script>
-function toggleFactions(row) {
-    let next = row.nextElementSibling;
-    while (next && next.classList.contains('faction-row')) {
-        next.style.display = (next.style.display === 'table-row') ? 'none' : 'table-row';
-        next = next.nextElementSibling;
-    }
-}
-</script>!}
 
 **Potential coalitions:**
 
