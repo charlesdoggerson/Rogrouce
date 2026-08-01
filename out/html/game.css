@@ -576,39 +576,51 @@ table {
     fill: #654D5A;
 }
 .seat.left_a {
-    fill: #420202;          
+    fill: #420202;
+    stroke: #450808;
+    stroke-width: 1px;
 }
 .seat.left_s {
-    fill: #1A0505;         
+    fill: #1A0505;
+    stroke: #450808;
+    stroke-width: 1px;
 }
 .seat.left_nb {
-    fill: #8A5555;         
+    fill: #8A5555;
+    stroke: #450808;
+    stroke-width: 1px;
 }
 
 .seat.rkp_l {
-    fill: #C41E1E;          
+    fill: #C41E1E;
+    stroke: #852120;
+    stroke-width: 1px;
 }
 .seat.rkp_i {
-    fill: #A60600;          
+    fill: #A60600;
+    stroke: #852120;
+    stroke-width: 1px;
 }
 .seat.rkp_r {
-    fill: #6B2525;          
+    fill: #6B2525;
+    stroke: #852120;
+    stroke-width: 1px;
 }
 
 .seat.su_l {
     fill: #5C3131;
     stroke: var(--border-color);
-    stroke-width: 0.5px;
+    stroke-width: 1px;
 }
 .seat.su_c {
     fill: #CC322F;
     stroke: var(--border-color);
-    stroke-width: 0.5px;
+    stroke-width: 1px;
 }
 .seat.su_r {
     fill: #EB6767;
     stroke: var(--border-color);
-    stroke-width: 0.5px;
+    stroke-width: 1px;
 }
 
 .seat.rnu_l {
@@ -651,43 +663,55 @@ table {
 .seat.rlrp_p {
     fill: #CCB77A;
     stroke: var(--border-color);
-    stroke-width: 0.5px;
+    stroke-width: 1px;
 }
 .seat.rlrp_r {
     fill: #DAB74C;
     stroke: var(--border-color);
-    stroke-width: 0.5px;
+    stroke-width: 1px;
 }
 .seat.rlrp_c {
     fill: #B0982C;
     stroke: var(--border-color);
-    stroke-width: 0.5px;
+    stroke-width: 1px;
 }
 
 .seat.lcpr_c {
     fill: #B0802C;
+    stroke:  #F57C00;
+    stroke-width: 1px;
 }
 .seat.lcpr_n {
     fill: #BD7915;
+    stroke:  #F57C00;
+    stroke-width: 1px;
 }
 .seat.lcpr_i {
     fill: #855C14;
+    stroke:  #F57C00;
+    stroke-width: 1px;
 }
 
 .seat.rnkp_yc {
     fill: #5C649C;
+    stroke:  #303F9F;
+    stroke-width: 1px;
 }
 .seat.rnkp_lul {
     fill: #436E45;
 }
 .seat.rnkp_oc {
     fill: #263B96;
+    stroke:  #303F9F;
+    stroke-width: 1px;
 }
 .seat.rnkp_luc {
     fill: #174A18;
 }
 .seat.rnkp_rc {
     fill: #102347;
+    stroke:  #303F9F;
+    stroke-width: 1px;
 }
 .seat.rnkp_lub {
     fill: #063302;
@@ -698,12 +722,18 @@ table {
 }
 .seat.npf_c {
     fill: #917091;
+    stroke:  #997789;
+    stroke-width: 1px;
 }
 .seat.npf_og {
     fill: #654D5A;
+    stroke:  #997789;
+    stroke-width: 1px;
 }
 .seat.npf_r {
     fill: #570554;
+    stroke:  #997789;
+    stroke-width: 1px;
 }
 
 
