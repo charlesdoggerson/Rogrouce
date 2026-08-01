@@ -36,7 +36,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; rnkp_relation += 5*(1 - dissent); lcpr_relation += 5*(1 - dissent); left_dissent += 4;
 
-The <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span> has a history of neutrality or outright cooperation with the oligarchs, though this not mean we cannot ally them. Our left faction expresses displeasure, but the <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span> might be a needed ally against the oligarchs.
+The <span style="color: #303F9F;">rig</span><span style="color: #F57C00;">ht</span> has a history of neutrality or outright cooperation with the oligarchs, though this not mean we cannot ally them. Our left faction expresses displeasure, but the <span style="color: #303F9F;">rig</span> <span style="color: #F57C00;">ht</span> might be a needed ally against the oligarchs.
 
 
 
