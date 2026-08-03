@@ -576,23 +576,23 @@ table {
     fill: #654D5A;
 }
 .seat.left_a {
-    fill: #420202;
+    fill: #292929;
     stroke: #450808;
     stroke-width: 1px;
 }
 .seat.left_s {
-    fill: #1A0505;
+    fill: #4A110D;
     stroke: #450808;
     stroke-width: 1px;
 }
 .seat.left_nb {
-    fill: #8A5555;
+    fill: #E20002;
     stroke: #450808;
     stroke-width: 1px;
 }
 
 .seat.rkp_l {
-    fill: #C41E1E;
+    fill: #800000;
     stroke: #852120;
     stroke-width: 1px;
 }
@@ -602,23 +602,23 @@ table {
     stroke-width: 1px;
 }
 .seat.rkp_r {
-    fill: #6B2525;
+    fill: #B54848;
     stroke: #852120;
     stroke-width: 1px;
 }
 
 .seat.su_l {
-    fill: #5C3131;
+    fill: #751049;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
 .seat.su_c {
-    fill: #CC322F;
+    fill: #9F1897;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
 .seat.su_r {
-    fill: #EB6767;
+    fill: #E075D8;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
@@ -645,17 +645,17 @@ table {
 }
 
 .seat.bf_s {
-    fill: #99E043;
+    fill: #74B58A;
     stroke: var(--border-color);
     stroke-width: 0.5px;
 }
 .seat.bf_r {
-    fill: #6FA372;
+    fill: #179045;
     stroke: var(--border-color);
     stroke-width: 0.5px;
 }
 .seat.bf_c {
-    fill: #179977;
+    fill: #11572C;
     stroke: var(--border-color);
     stroke-width: 0.5px;
 }
