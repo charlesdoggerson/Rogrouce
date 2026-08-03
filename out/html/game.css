@@ -576,70 +576,70 @@ table {
     fill: #654D5A;
 }
 .seat.left_a {
-    fill: #292929;
+    fill: #0D0C0C;
     stroke: #450808;
     stroke-width: 1px;
 }
 .seat.left_s {
-    fill: #4A110D;
+    fill: #592E2E;
     stroke: #450808;
     stroke-width: 1px;
 }
 .seat.left_nb {
-    fill: #E20002;
+    fill: #634848;
     stroke: #450808;
     stroke-width: 1px;
 }
 
 .seat.rkp_l {
-    fill: #800000;
+    fill: #701B1B;
     stroke: #852120;
     stroke-width: 1px;
 }
 .seat.rkp_i {
-    fill: #A60600;
+    fill: #8F0401;
     stroke: #852120;
     stroke-width: 1px;
 }
 .seat.rkp_r {
-    fill: #B54848;
+    fill: #B02525;
     stroke: #852120;
     stroke-width: 1px;
 }
 
 .seat.su_l {
-    fill: #FA3B39;
+    fill: #A13130;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
 .seat.su_c {
-    fill: #FF5957;
+    fill: #FF4A47;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
 .seat.su_r {
-    fill: #F55E5D;
+    fill: #F77574;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
 
 .seat.rnu_l {
-    fill: #D95B5B;         
+    fill: #A13030;         
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
 .seat.rnu_c {
-    fill: #E57373;          
+    fill: #C25353;          
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
 .seat.rnu_la {
-    fill: #966666;          
+    fill: #AB6D6D;          
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
 .seat.rnu_r {
-    fill: #E09494;         
+    fill: #CC7C7C;         
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
