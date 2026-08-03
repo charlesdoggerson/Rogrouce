@@ -608,17 +608,17 @@ table {
 }
 
 .seat.su_l {
-    fill: #A13130;
+    fill: #A1334C;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
 .seat.su_c {
-    fill: #FF4A47;
+    fill: #F0325A;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
 .seat.su_r {
-    fill: #F77574;
+    fill: #F05679;
     stroke: var(--border-color);
     stroke-width: 1px;
 }
