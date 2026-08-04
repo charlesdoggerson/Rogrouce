@@ -69,7 +69,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Rogroucean Liberal Republican Party" style="color: #DAB74C;">RLRP</span>!}: [+ rlrp_relation : relationships +]
 
-RKP: [+ rkp_relation : relationships +]
+{!<span class="tooltip-text" title="Rogroucean Communist Party" style="color: #591716;">RKP</span>!}: [+ rkp_relation : relationships +]
 
 {!<span class="tooltip-text" title="United Left Workers Front" style="color: #2B0303;">FVA</span>!}: [+ left_relation : relationships +]
 
