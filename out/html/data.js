@@ -11,7 +11,7 @@ const colourList = [{
 ];
 const tooltipList = [{
     searchString: "RKP",
-    explanationText: "<img src=img/logos/RKP.jpg> Rogroucean Communist Party"
+    explanationText: "<img src=img/RKP.jpg> Rogroucean Communist Party"
     },
     {
     searchString: "Appointed",
