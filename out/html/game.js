@@ -243,14 +243,7 @@ window.displayText = function (text) {
     }
   };
 
-  // TODO: have some code for tabbed sidebar browsing.
-  window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-  };
+
 
   window.changeTab = function(newTab, tabId) {
       if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
