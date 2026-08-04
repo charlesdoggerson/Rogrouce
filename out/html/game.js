@@ -158,6 +158,68 @@
     }
   };
 
+  //This is the JS code, it just needs to be before the end of the file
+window.displayText = function (text) {
+        return applyWholesome(text);
+    };
+  
+    //To check if extra dynamic or not
+    function getDynamicTooltipContent(searchString, baseTooltip) {
+        var Q = window.dendryUI && window.dendryUI.dendryEngine && window.dendryUI.dendryEngine.state ? 
+                window.dendryUI.dendryEngine.state.qualities : null;
+        
+        if (!Q) return baseTooltip.explanationText;
+
+        if (searchString === 'Sinhalese' && Q.sinhala_proportion !== undefined) {
+            var proptext = Q.sinhala_proportion;
+            return baseTooltip.explanationText + '<br>' + proptext + '% of the population';
+        }
+
+        return baseTooltip.explanationText;
+        
+    }
+    
+    window.getDynamicTooltipContent = getDynamicTooltipContent;
+  
+    function applyWholesome(str) {
+        const allWords = new Set([
+            ...tooltipList.map(t => t.searchString),
+            ...colourList.map(c => c.word)
+        ]);
+    
+        // Escape special regex characters in the words
+        const escapedWords = [...allWords].map(word => 
+            word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+        );
+        
+        const regex = new RegExp(`\\b(${escapedWords.join('|')})\\b`, 'g');
+    
+        return str.replace(/(<(?:span|strong)[^>]*>.*?<\/(?:span|strong)>|<[^>]+>|[^<]+)/g, (segment) => {
+            if (segment.startsWith('<')) return segment;
+    
+            return segment.replace(regex, (match) => {
+                const tooltip = tooltipList.find(t => t.searchString === match);
+                const colour = colourList.find(c => c.word === match);
+    
+                let style = colour ? colour.style : '';
+                let innerText = match;
+    
+                if (colour && colour.img) {
+                    innerText = `<img src="${colour.img}" class="p_icon" alt="">${innerText}`;
+                }
+    
+                if (tooltip) {
+                    var tooltipContent = getDynamicTooltipContent(match, tooltip);
+                    return `<span class='mytooltip' style='${style}'>${innerText}<span class='mytooltiptext'>${tooltipContent}</span></span>`;
+                } else if (colour) {
+                    return `<span style='${style}'>${innerText}</span>`;
+                }
+    
+                return match;
+            });
+        });
+    }
+
   
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
