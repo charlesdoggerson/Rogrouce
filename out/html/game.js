@@ -273,6 +273,8 @@ window.displayText = function (text) {
       var html = dendryUI.contentToHTML.convert(displayContent);
       $('#qualities').html(window.displayText(html));
       };
+   window.onDisplayContent = function() {
+      window.updateSidebar();
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
