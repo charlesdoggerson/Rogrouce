@@ -242,7 +242,14 @@ window.displayText = function (text) {
         window.justLoaded = false;
     }
   };
-
+  window.updateSidebar = function() {    
+    $('#qualities').empty();
+    var scene = dendryUI.game.scenes[window.statusTab];
+    dendryUI.dendryEngine._runActions(scene.onArrival);
+    var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+    var html = dendryUI.contentToHTML.convert(displayContent);
+    $('#qualities').html(window.displayText(html));
+    };
 
 
   window.changeTab = function(newTab, tabId) {
@@ -258,14 +265,8 @@ window.displayText = function (text) {
       tabButton.className += ' active';
       window.statusTab = newTab;
       
-  window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      var html = dendryUI.contentToHTML.convert(displayContent);
-      $('#qualities').html(window.displayText(html));
-      };
+
+
    window.onDisplayContent = function() {
       window.updateSidebar();
 
