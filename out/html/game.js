@@ -158,7 +158,8 @@
     }
   };
 
-  //This is the JS code, it just needs to be before the end of the file
+  
+//thank you Communist45/that_socialist_guy for the code 
 window.displayText = function (text) {
         return applyWholesome(text);
     };
