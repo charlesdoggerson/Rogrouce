@@ -222,11 +222,7 @@
     }
 
   
-  // This function allows you to modify the text before it's displayed.
-  // E.g. wrapping chat-like messages in spans.
-  window.displayText = function(text) {
-      return text;
-  };
+
 
   // This function allows you to do something in response to signals.
   window.handleSignal = function(signal, event, scene_id) {
