@@ -252,25 +252,26 @@
   };
 
 
-  window.changeTab = function(newTab, tabId) {
-      if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
-          window.alert('Polls are not available in historical mode.');
-          return;
-      }
-      var tabButton = document.getElementById(tabId);
-      var tabButtons = document.getElementsByClassName('tab_button');
-      for (i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].className = tabButtons[i].className.replace(' active', '');
-      }
-      tabButton.className += ' active';
-      window.statusTab = newTab;
-      window.updateSidebar();
-  };
+ window.changeTab = function(newTab, tabId) {
+    if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
+        window.alert('Polls are not available in historical mode.');
+        return;
+    }
+    var tabButton = document.getElementById(tabId);
+    var tabButtons = document.getElementsByClassName('tab_button');
+    for (var i = 0; i < tabButtons.length; i++) {   // also missing `var`/`let`
+      tabButtons[i].className = tabButtons[i].className.replace(' active', '');
+    }
+    tabButton.className += ' active';
+    window.statusTab = newTab;
+    window.updateSidebar();
+};   
       
 
 
    window.onDisplayContent = function() {
       window.updateSidebar();
+ };
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
