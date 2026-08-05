@@ -265,6 +265,7 @@
       tabButton.className += ' active';
       window.statusTab = newTab;
       window.updateSidebar();
+  };
       
 
 
