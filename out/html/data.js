@@ -47,6 +47,14 @@ const tooltipList = [{
     explanationText: "<img src=img/RKP.jpg> Rogroucean Communist Party"
     },
     {
+    searchString: "BF",
+    explanationText: "<img src=img/BF.jpg> The Peasant Front"
+    },
+    {
+searchString: "Peasant Front",
+    explanationText: "<img src=img/BF.jpg> The Peasant Front"
+    },
+    {
     searchString: "Appointed",
     explanationText: "<img src=img/logos/governer_general_Logo.png> Appointed by the Governor-General"
     },
