@@ -26,8 +26,7 @@ Resources available: [+ resources +]
 
 
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
-[? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
+RNU position: [? if rnu_toleration : toleration ?][? if rnu_in_government : in government - ?][? if rnu_toleration == 0 and rnu_in_government == 0 and rnu_caretaker == 0 : opposition ?][? if rnu_caretaker : caretaker government ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
@@ -63,21 +62,21 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Peasant Front" style="color: #2E7D32;">BF</span>!}: [+ bf_relation : relationships +]
+BF: [+ bf_relation : relationships +]
 
-{!<span class="tooltip-text" title="Socialist Union" style="color: #E53935;">SU</span>!}: [+ su_relation : relationships +]
+SU: [+ su_relation : relationships +]
 
-{!<span class="tooltip-text" title="Rogroucean Liberal Republican Party" style="color: #DAB74C;">RLRP</span>!}: [+ rlrp_relation : relationships +]
+RLRP: [+ rlrp_relation : relationships +]
 
 RKP: [+ rkp_relation : relationships +]
 
-{!<span class="tooltip-text" title="United Left Workers Front" style="color: #2B0303;">FVA</span>!}: [+ left_relation : relationships +]
+FVA: [+ left_relation : relationships +]
 
-{!<span class="tooltip-text" title="Liberal Constitutional Party of Rogrouce" style="color: #F28500;">LCPR</span>!}: [+ lcpr_relation : relationships +]
+LCPR: [+ lcpr_relation : relationships +]
 
-{!<span class="tooltip-text" title="Rogroucean National Conservative Party" style="color: #303F9F;">RNKP</span>!}: [+ rnkp_relation : relationships +]
+RNKP: [+ rnkp_relation : relationships +]
 
-{!<span class="tooltip-text" title="National Patriot Front" style="color: #654D5A;">NPF</span>!}: [+ npf_relation : relationships +]
+NPF: [+ npf_relation : relationships +]
 
 {!<span class="tooltip-text" title="Others" style="color: #a0a0a0;">Others</span>!}: [+ other_relation : relationships +]
 
