@@ -355,13 +355,15 @@ Q.president = "Hindenburg";
 // starting chancellor: Wilhelm Marx
 Q.chancellor = "Marx";
 Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
-Q.z_in_government = 1;
-Q.ddp_in_government = 0;
-Q.dvp_in_government = 1;
-Q.dnvp_in_government = 1;
-Q.kpd_in_government = 0;
-Q.nsdap_in_government = 0;
+Q.rnu_in_government = 0;
+Q.bf_in_government = 1;
+Q.rkp_in_government = 0;
+Q.rlrp_in_government = 1;
+Q.lcpr_in_government = 1;
+Q.rnkp_in_government = 0;
+Q.npf_in_government = 0;
+Q.su_in_government = 1;
+Q.left_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
@@ -387,7 +389,7 @@ Q.coalition_dissent = 0;
 Q.kpd_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
-Q.spd_toleration = 0;
+Q.rnu_toleration = 0;
 
 // is the current government a presidential minority government?
 Q.minority_government = 0;
