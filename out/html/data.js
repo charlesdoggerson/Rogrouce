@@ -58,6 +58,10 @@ searchString: "Peasant Front",
     searchString: "Appointed",
     explanationText: "<img src=img/logos/governer_general_Logo.png> Appointed by the Governor-General"
     },
+ {
+    searchString: "SU",
+    explanationText: "<img src=img/SU.jpg> Socialist Union"
+    },
 ];
 
 
