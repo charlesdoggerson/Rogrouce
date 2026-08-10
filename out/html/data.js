@@ -66,6 +66,10 @@ searchString: "Peasant Front",
     searchString: "RLRP",
     explanationText: "<img src=img/RLRP.jpg> Rogroucean Liberal Republican Party"
     },
+{
+    searchString: "RNKP",
+    explanationText: "<img src=img/RNKP.jpg> Rogroucean National Conservative Party"
+    },
 ];
 
 
