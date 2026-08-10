@@ -62,6 +62,10 @@ searchString: "Peasant Front",
     searchString: "SU",
     explanationText: "<img src=img/SU.jpg> Socialist Union"
     },
+{
+    searchString: "RLRP",
+    explanationText: "<img src=img/RLRP.jpg> Rogroucean Liberal Republican Party"
+    },
 ];
 
 
