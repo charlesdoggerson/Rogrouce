@@ -41,9 +41,19 @@ on-arrival: {!
 // set old results
 // election threshold constitutional reform
 // banning parties
+@post_election_1928
+on-arrival: {!
+// set old results
+// election threshold constitutional reform
+// banning parties
+
+var total_seats = 700;          
 var new_party_sum = 0;
+
 for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
+    Q['old_' + party + '_seats'] = Q[party + '_seats'] || 0;
+
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
             Q[party + '_r'] = 0;
@@ -54,36 +64,53 @@ for (var party of Q.parties) {
     } else {
         Q[party + '_r'] = Q[party + '_votes'];
     }
-    // if we use decimals, then we might want to truncate the numbers
+
+    // display percentage
     if (Q.use_decimals) {
-        Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
-    }  else {
-            Q[party + '_r_disp'] = Q[party+'_r'];
+        Q[party + '_r_disp'] = Q[party + '_r'].toFixed(1);
+    } else {
+        Q[party + '_r_disp'] = Q[party + '_r'];
     }
+
     Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
-    var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
-    Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
+    var sign = Q['change_' + party + '_r'] > 0 ? '+' : '';
+    Q['str_change_' + party] = sign + Q['change_' + party + '_r'];
 }
-// calculate new party sum if electoral reform
+
+// recalculate percentages if electoral threshold / reform is active
 if (Q.electoral_threshold && Q.electoral_threshold > 0) {
     for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
             if (Q.use_decimals) {
-                Q[party + '_r'] = Math.round(Q[party + '_r']*1000/new_party_sum)/10;
+                Q[party + '_r'] = Math.round(Q[party + '_r'] * 1000 / new_party_sum) / 10;
             } else {
-                Q[party + '_r'] = Math.round(Q[party + '_r']*100/new_party_sum);
+                Q[party + '_r'] = Math.round(Q[party + '_r'] * 100 / new_party_sum);
             }
         }
+
+        // update display
         if (Q.use_decimals) {
-            Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
+            Q[party + '_r_disp'] = Q[party + '_r'].toFixed(1);
         } else {
-            Q[party + '_r_disp'] = Q[party+'_r'];
+            Q[party + '_r_disp'] = Q[party + '_r'];
         }
+
         Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
-        var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
-        Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
+        var sign = Q['change_' + party + '_r'] > 0 ? '+' : '';
+        Q['str_change_' + party] = sign + Q['change_' + party + '_r'];
     }
 }
+
+for (var party of Q.parties) {
+
+    Q[party + '_seats'] = Math.round(Q[party + '_r'] * total_seats / 100);
+
+    Q['change_' + party + '_seats'] = Q[party + '_seats'] - (Q['old_' + party + '_seats'] || 0);
+    
+    var seatSign = Q['change_' + party + '_seats'] > 0 ? '+' : '';
+    Q['str_change_seats_' + party] = seatSign + Q['change_' + party + '_seats'];
+}
+!}
 
 // get change arrows and signs
 
@@ -432,7 +459,7 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E57373; outline: 2px; outline-style: solid;'> </div> !} RNU: {!</td><td>!} [+ rnu_r +]% {!</td><td>!} [+ str_change_rnu +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E57373; outline: 2px; outline-style: solid;'> </div> !} RNU: {!</td><td>!} [+ rnu_r +]% {!</td><td>!} [+ str_change_rnu +] {!</td><td>!}  [+ rnu_seats +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#A13030; outline: 2px; outline-style: solid;'> </div> !} RNU Left: {!</td><td>!} [+ rnu_l_r +]% {!</td><td>!}
 
