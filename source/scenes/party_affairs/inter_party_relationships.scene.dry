@@ -6,17 +6,17 @@ is-card: true
 on-arrival: month_actions += 1; inter_party_relationships_timer = 6;
 card-image: img/weimar_coalition_2.jpg
 max-visits: 12
-#subtitle: Building relations with the other political parties of Germany.
+#subtitle: Building relations with the other political parties.
 
 = Inter-Party Relationships
 
-The <span style="color: #E57373;">RNU</span> has only gone so far because of our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span>. Though beyond them, we could also try and reach out to the <span style="color: ##591716;">le</span><span style="color: #2B0303;">ft</span> and to the non oligarchic <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span>. 
+The RNU has only gone so far because of our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span>. Though beyond them, we could also try and reach out to the <span style="color: ##591716;">le</span><span style="color: #2B0303;">ft</span> and to the non oligarchic <span style="color: '#303F9F;">rig</span> <span style="color: '#F57C00;">ht</span>. 
 
 - @allies: Strengthen our bonds with the parties in the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span> <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span>.
 - @right: Strengthen our bond with the <span style="color: #303F9F;">National Conservatives</span> and the <span style="color: #F57C00;">Liberal Constitutionalists</span> parties on the right.
 - @liberals: Strengthen our bonds with the <span style="color: #DAB74C;">Lib</span><span style="color: #F57C00;">erals</span>. 
 - @left: Look towards reconciliation with the <span style="color: #591716;">communists</span> but also the broader <span style="color: #591716;">le</span><span style="color: #591716;">ft</span>
-- @bf: Lets increase ties with the <span style="color: #2E7D32;">Peasant Front</span>.
+- @bf: Lets increase ties with the Peasant Front
 - @su: How about looking to improving our standing with the <span style="color: #E53935;">Socialist Union</span>?
 - @lonely: Maybe not now.
 - @easy_discard
@@ -36,7 +36,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; rnkp_relation += 5*(1 - dissent); lcpr_relation += 5*(1 - dissent); left_dissent += 4;
 
-The <span style="color: #303F9F;">rig</span><span style="color: #F57C00;">ht</span> has a history of neutrality or outright cooperation with the oligarchs, though this not mean we cannot ally them. Our left faction expresses displeasure, but the <span style="color: #303F9F;">rig</span> <span style="color: #F57C00;">ht</span> might be a needed ally against the oligarchs.
+The <span style="color: #303F9F;">rig</span><span style="color: #F57C00;">ht</span> parties have tried to distance themselves from us since the days of the <span style="color: #E53935;">f</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span>, but they accept our cooperation with some caution. Our left faction expresses displeasure, but the <span style="color: #303F9F;">rig</span><span style="color: #F57C00;">ht</span> might be a needed ally against the oligarchs.
 
 
 
@@ -47,16 +47,16 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; rlrp_relation += 6*(1 - dissent); lcpr_relation += 6*(1 - dissent); left_dissent += 2;
 
-The <span style="color: #DAB74C;">Lib</span><span style="color: #F57C00;">erals</span> are receptive to our efforts, especially the <span style="color: #DAB74C;">RLRP</span>. The left faction of our party is annoyed that we are negotiating with the <span style="color: #F57C00;">Liberal Constitutionalists</span>.
+The <span style="color: #DAB74C;">Lib</span><span style="color: #F57C00;">erals</span> are receptive to our efforts, especially the RLRP. The left faction of our party is annoyed that we are negotiating with the LCPR.
 
 
 @left
-subtitle: -1 resources The <span style="color: #E53935;">SU</span> will certainly be pleased.
+subtitle: -1 resources The SU will certainly be pleased.
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; rkp_relation += 6*(1 - dissent); su_relation += 6*(1 - dissent); reformist_dissent += 2; lcpr_relation -= 2; rnkp_relation -=2; left_dissent -= 5;
 
-The <span style="color: #591716;">RKP</span> used to be a member of the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and have generally been friendly, albeit wary, towards us. The <span style="color: #E53935;">SU</span> and our left faction are also pleased with us, since this could lead to future reconcilliation and cooperation.
+The RKP used to be a member of the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and have generally been friendly, albeit wary, towards us. The SU and our left faction are also pleased with us, since this could lead to future reconcilliation and cooperation.
 
 @bf
 subtitle: -1 resources 
@@ -64,7 +64,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; bf_relation += 10*(1 - dissent); 
 
-The <span style="color: #2E7D32;">Peasant Front</span> is one of our closest allies, so increasing our relations comes naturally.
+The Peasant Front is one of our closest allies, so increasing our relations comes naturally.
 
 @su
 subtitle: -1 resources 
@@ -72,7 +72,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; su_relation += 10*(1 - dissent); 
 
-Despite being a splinter party of both <span style="color: #E57373;">us</span> and the <span style="color: #591716;">RKP</span>, the <span style="color: #E53935;">SU</span> is one of our closest allies, but they would've preffered us focusing on the broader <span style="color: #591716;">le</span><span style="color: #2B0303;">ft</span> rather than just them.
+Despite being a splinter party of both <span style="color: #E57373;">us</span> and the RKP, the SU is one of our closest allies, but they would've preffered us focusing on the broader <span style="color: #591716;">le</span><span style="color: #2B0303;">ft</span> rather than just them.
 
 
 @lonely
