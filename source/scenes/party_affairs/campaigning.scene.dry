@@ -16,6 +16,7 @@ Election season or not, <span style="color: #E57373;">we</span> are always looki
 - @old_middle: The "old middle class" of small independent businessmen and artisans.
 - @rural: Rural workers and small farmers, who we usually leave to the <span style="color: #2E7D32;">Peasant Front</span>.
 - @unemployed: The unemployed.
+- @veterans: Veterans of the Great War.
 - @root: We either don't want to or cannot campaign right now.
 - @easy_discard
 
@@ -33,7 +34,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: new_middle_rnu += 6*(1-dissent); new_middle_rnu -= 4 if socialism <= 49 and peoples_party == 0; resources -= 1; peoples_party_support += 1;  lib_angry +=1 if lib_angry > 0
 
-We have increased our campaigning among the new middle class, though this is usually the domain of our allies in the <span style="color: #DAB74C;">RLRP</span> and they are annoyed that we're interfering in their already small demographic.
+We have increased our campaigning among the new middle class, though this is usually the domain of our allies in the RLRP and they are annoyed that we're interfering in their already small demographic.
 
 @old_middle
 subtitle: -1 resources
@@ -49,7 +50,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: rural_rnu += 5*(1-dissent); rural_rnu -= 3*(1-dissent) if peoples_party == 0; resources -= 1; peoples_party_support += 1; rural_rnu += 3*(1-dissent) if rural_policy >= 2; bf_angry +=1 if bf_angry > 0
 
-We have increased our campaigning among farmers. Though usually the domain of the <span style="color: #2E7D32;">Peasant Front</span>. [? if bf_angry < 3: The party reacts with alarm, though it seems cooler heads have prevailed for now. ?] [? if bf_angry >=3: This has not done us any favors with them, especially due to our increased tensions. ?]
+We have increased our campaigning among farmers. Though usually the domain of the Peasant Front. [? if bf_angry < 3: The party reacts with alarm, though it seems cooler heads have prevailed for now. ?] [? if bf_angry >=3: This has not done us any favors with them, especially due to our increased tensions. ?]
 
 @unemployed
 subtitle: -1 resources
@@ -59,4 +60,10 @@ on-arrival: unemployed_rnu += 6*(1-dissent); resources -= 1; unemployed_rnu -= 3
 
 We have increased our campaigning among the unemployed. [? if welfare < 0: The welfare cuts and resultant poverty make our campaign more difficult, since we are associated with the government that enacted these cuts, and our campaign may even backfire. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract support from the unemployed. ?]
 
+@veterans
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: veteran_rnu += 6*(1-dissent); resources -= 1; 
 
+We have increased our campaigning among veterans.
