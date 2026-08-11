@@ -70,6 +70,14 @@ searchString: "Peasant Front",
     searchString: "RNKP",
     explanationText: "<img src=img/RNKP.jpg> Rogroucean National Conservative Party"
     },
+{
+    searchString: "LCPR",
+    explanationText: "<img src=img/LCPR.jpg> Liberal Constitutional Rogroucean Party"
+    },
+{
+    searchString: "NPF",
+    explanationText: "<img src=img/NPF.jpg> National Patriot Front"
+    },
 ];
 
 
