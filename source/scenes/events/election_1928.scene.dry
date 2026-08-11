@@ -46,14 +46,9 @@ on-arrival: {!
 // set old results
 // election threshold constitutional reform
 // banning parties
-
-var total_seats = 700;          
 var new_party_sum = 0;
-
 for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
-    Q['old_' + party + '_seats'] = Q[party + '_seats'] || 0;
-
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
             Q[party + '_r'] = 0;
@@ -64,53 +59,37 @@ for (var party of Q.parties) {
     } else {
         Q[party + '_r'] = Q[party + '_votes'];
     }
-
-    // display percentage
+    // if we use decimals, then we might want to truncate the numbers
     if (Q.use_decimals) {
-        Q[party + '_r_disp'] = Q[party + '_r'].toFixed(1);
-    } else {
-        Q[party + '_r_disp'] = Q[party + '_r'];
+        Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
+    }  else {
+            Q[party + '_r_disp'] = Q[party+'_r'];
     }
-
     Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
-    var sign = Q['change_' + party + '_r'] > 0 ? '+' : '';
-    Q['str_change_' + party] = sign + Q['change_' + party + '_r'];
+    var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
+    Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
 }
-
-// recalculate percentages if electoral threshold / reform is active
+// calculate new party sum if electoral reform
 if (Q.electoral_threshold && Q.electoral_threshold > 0) {
     for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
             if (Q.use_decimals) {
-                Q[party + '_r'] = Math.round(Q[party + '_r'] * 1000 / new_party_sum) / 10;
+                Q[party + '_r'] = Math.round(Q[party + '_r']*1000/new_party_sum)/10;
             } else {
-                Q[party + '_r'] = Math.round(Q[party + '_r'] * 100 / new_party_sum);
+                Q[party + '_r'] = Math.round(Q[party + '_r']*100/new_party_sum);
             }
         }
-
-        // update display
         if (Q.use_decimals) {
-            Q[party + '_r_disp'] = Q[party + '_r'].toFixed(1);
+            Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
         } else {
-            Q[party + '_r_disp'] = Q[party + '_r'];
+            Q[party + '_r_disp'] = Q[party+'_r'];
         }
-
         Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
-        var sign = Q['change_' + party + '_r'] > 0 ? '+' : '';
-        Q['str_change_' + party] = sign + Q['change_' + party + '_r'];
+        var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
+        Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
     }
 }
 
-for (var party of Q.parties) {
-
-    Q[party + '_seats'] = Math.round(Q[party + '_r'] * total_seats / 100);
-
-    Q['change_' + party + '_seats'] = Q[party + '_seats'] - (Q['old_' + party + '_seats'] || 0);
-    
-    var seatSign = Q['change_' + party + '_seats'] > 0 ? '+' : '';
-    Q['str_change_seats_' + party] = seatSign + Q['change_' + party + '_seats'];
-}
-!}
 
 // get change arrows and signs
 
