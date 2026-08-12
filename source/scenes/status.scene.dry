@@ -96,8 +96,8 @@ NPF: [+ npf_relation : relationships +]
 @paramilitaries
 on-arrival: {!
 
-Q.frrf_strength_ = Q.fk_strength + Q.gb_strength + bb_strength
-Q.frrf_militancy = ( Q.fk_militancy + Q.gb_militancy + Q.bb_militancy ) / 0.3
+Q.frrf_strength = Q.fk_strength + Q.gb_strength + Q.bb_strength;
+Q.frrf_militancy = ( Q.fk_militancy + Q.gb_militancy + Q.bb_militancy ) / 3;
 
 if (Q.frrf_strength) {
     Q.frrf_strength_2 = Q.frrf_strength.toFixed(1);
