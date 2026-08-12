@@ -148,7 +148,7 @@ Q.prussian_government = "SPD";
 // LCPR - Orange Bands/ OB (  idea, not added) 
 // NPF - Patriotic Fighter League / PFL 
 // Independent - Great Veterans Union / SV
-q.sr_strength = 50;
+Q.sr_strength = 50;
 Q.sr_militancy = 0.3;
 Q.sr_banned = 0;
 Q.rk_strength = 150;
