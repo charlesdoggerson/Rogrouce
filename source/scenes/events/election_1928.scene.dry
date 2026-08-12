@@ -207,7 +207,7 @@ Q.rlrp_c_r = Math.floor(Q.rlrp_r * (Q.rlrp_c_strength / 100));
 
 Q.rkp_i_r = Math.floor(Q.rkp_r * (Q.rkp_i_strength / 100));
 Q.rkp_l_r = Math.floor(Q.rkp_r * (Q.rkp_l_strength / 100));
-Q.rkp_r_r = Math.floor(Q.rkp_r * (Q.rkrp_r_strength / 100));  // using the original typo name
+Q.rkp_r_r = Math.floor(Q.rkp_r * (Q.rkp_r_strength / 100));  
 
 Q.rnkp_yc_r = Math.floor(Q.rnkp_r * (Q.rnkp_yc_strength / 100));
 Q.rnkp_oc_r = Math.floor(Q.rnkp_r * (Q.rnkp_oc_strength / 100));
