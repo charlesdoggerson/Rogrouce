@@ -95,37 +95,78 @@ NPF: [+ npf_relation : relationships +]
 
 @paramilitaries
 on-arrival: {!
-if (Q.rb_strength) {
-    Q.rb_strength_2 = Q.rb_strength.toFixed(1);
+
+Q.frrf_strength_ = Q.fk_strength + Q.gb_strength + bb_strength
+Q.frrf_militancy = ( Q.fk_militancy + Q.gb_militancy + Q.bb_militancy ) / 0.3
+
+if (Q.frrf_strength) {
+    Q.frrf_strength_2 = Q.frrf_strength.toFixed(1);
 }
-if (Q.rfb_strength) {
-    Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
+if (Q.fk_strength) {
+    Q.fk_strength_2 = Q.fk_strength.toFixed(1);
 }
-if (Q.sh_strength) {
-    Q.sh_strength_2 = Q.sh_strength.toFixed(1);
+if (Q.gb_strength) {
+    Q.gb_strength_2 = Q.gb_strength.toFixed(1);
 }
-if (Q.sa_strength) {
-    Q.sa_strength_2 = Q.sa_strength.toFixed(1);
+if (Q.bb_strength) {
+    Q.bb_strength_2 = Q.bb_strength.toFixed(1);
+}
+if (Q.sr_strength) {
+    Q.sr_strength_2 = Q.sr_strength.toFixed(1);
+}
+if (Q.pfl_strength) {
+    Q.pfl_strength_2 = Q.pfl_strength.toFixed(1);
+}
+if (Q.sv_strength) {
+    Q.sv_strength_2 = Q.sv_strength.toFixed(1);
+}
+if (Q.rk_strength) {
+    Q.rk_strength_2 = Q.rk_strength.toFixed(1);
 }
 !}
 
 = Paramilitaries
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+<span style="color: #E53935;">**F**</span><span style="color: #E57373;">**RO**</span><span style="color: #2E7D32;">**N**</span><span style="color: #DAB74C;">**T**</span> **ALLIES**
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+FRRF Strength: [+ frrf_strength_2 +] thousand
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+FRRF Militarization: [+ frrf_militancy : militancy +]
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+Members of the FRRF
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+FK Strength: [+ fk_strength_2 +] thousand
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+FK Militarization: [+ fk_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+GB Strength: [+ gb_strength_2 +] thousand
 
-SA Militarization: [+ sa_militancy : militancy +]
+GB Militarization: [+ gb_militancy : militancy +]
+
+BB Strength: [+ bb_strength_2 +] thousand
+
+BB Militarization: [+ bb_militancy : militancy +]
+
+<span style="color: #5E5C5C;">**OTHER PARAMILITARIES**</span>
+
+RK Strength: [+ rk_strength_2 +] thousand
+
+RK Militarization: [+ rk_militancy : militancy +]
+
+SR Strength: [+ sr_strength_2 +] thousand
+
+SR Militarization: [+ sr_militancy : militancy +]
+
+SV Strength: [+ sv_strength_2 +] thousand
+
+SV Militarization: [+ sv_militancy : militancy +]
+
+<span style="color: #871A1A;">**THE ENEMY**</span>
+
+PFL Strength: [+ pfl_strength_2 +] thousand
+
+PFL Militarization: [+ pfl_militancy : militancy +]
+
 
 = Official military/paramilitaries
 
