@@ -137,8 +137,17 @@ Q.spd_prussia = 1;
 Q.prussian_government = "SPD";
 
 // The array of forces - paramilitary groups
-// Number of members in 1928 (in thousands)
-// Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
+// this is gonna suck
+// FVA - Black Regiments / SR
+// RKP - Red Combat Group / RK
+// SU + RNU - People's Guard / FK
+// BF - Green Battalions / GB
+// RLRP - Blue Bands / BB
+// FRRF = United Rogroucean Republican Front / FRRF is People's Guard, Green Battalions and Blue Bands
+// RNKP - Rogroucean Rangers / RR ( idea, not added) 
+// LCPR - Orange Bands/ OB (  idea, not added) 
+// NPF - Patriotic Fighter League / PFL 
+// Independent - Great Veterans Union / SV 
 Q.rb_strength = 2000;
 Q.rb_militancy = 0.01;
 Q.women_in_rb = 0;
