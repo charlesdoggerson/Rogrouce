@@ -433,7 +433,7 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E57373; outline: 2px; outline-style: solid;'> </div> !} RNU: {!</td><td>!} [+ rnu_r +]% {!</td><td>!} [+ str_change_rnu +] {!</td><td>!}  [+ rnu_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E57373; outline: 2px; outline-style: solid;'> </div> !} RNU: {!</td><td>!} [+ rnu_r +]% {!</td><td>!} [+ str_change_rnu +] {!</td><td>!}  
 
 {!<tr><td><div class="box" style='background-color:#A13030; outline: 2px; outline-style: solid;'> </div> !} RNU Left: {!</td><td>!} [+ rnu_l_r +]% {!</td><td>!}
 
