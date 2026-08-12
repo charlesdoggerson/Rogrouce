@@ -235,18 +235,21 @@ data = [
         "legend": "Anarchists",
         "name": "Anarchists",
         "seats": Math.round(Q.left_a_r*7),
+        "color": "#0D0C0C"
 },
 {
         "id": "left_s",
         "legend": "Syndicalists",
         "name": "Syndicalists",
         "seats": Math.round(Q.left_s_r*7),
+        "color": "#592E2E"
 },
 {
         "id": "left_nb",
         "legend": "National Bolsheviks",
         "name": "National Bolsheviks",
         "seats": Math.round(Q.left_nb_r*7),
+        "color": "#634848"
 },
 ];
 data = data.concat([
@@ -255,156 +258,182 @@ data = data.concat([
         "legend": "RKP Internationalists",
         "name": "RKP Internationalists",
         "seats": Math.round(Q.rkp_i_r*7),
+        "color": "#8F0401"
 },
 {
         "id": "rkp_l",
         "legend": "RKP Left Opposition",
         "name": "RKP Left Opposition",
         "seats": Math.round(Q.rkp_l_r*7),
+        "color": "#701B1B"
 },
 {
         "id": "rkp_r",
         "legend": "RKP Right Opposition",
         "name": "RKP Right Opposition",
         "seats": Math.round(Q.rkp_r_r*7),
+        "color": "#B02525"
 },
 {
         "id": "su_c",
         "legend": "SU centrists",
         "name": "SU centrists",
         "seats": Math.round(Q.su_c_r*7),
+        "color": "#F0325A"
 },
 {
         "id": "su_l",
         "legend": "SU leftists",
         "name": "SU leftists",
         "seats": Math.round(Q.su_l_r*7),
+        "color": "#A1334C"
 },
 {
         "id": "su_r",
         "legend": "SU rightists",
         "name": "SU rightists",
         "seats": Math.round(Q.su_r_r*7),
+        "color": "#F05679"
 },
 {
         "id": "rnu_l",
         "legend": "RNU Left",
         "name": "RNU Left",
         "seats": Math.round(Q.rnu_l_r*7),
+        "color": "#A13030"
 },
 {
         "id": "rnu_c",
         "legend": "RNU Centrists",
         "name": "RNU Centrists",
         "seats": Math.round(Q.rnu_c_r*7),
+        "color": "#C25353"
 },
 {
         "id": "rnu_la",
         "legend": "RNU Labor",
         "name": "RNU Labor",
         "seats": Math.round(Q.rnu_labor_r*7),
+        "color": "#AB6D6D"
 },
 {
         "id": "rnu_r",
         "legend": "RNU Reformist",
         "name": "RNU Reformist",
         "seats": Math.round(Q.rnu_reformist_r*7),
+        "color": "#CC7C7C"
 },
 {
         "id": "bf_r",
         "legend": "Peasant Republicans",
         "name": "Peasant Republicans",
         "seats": Math.round(Q.bf_r_r*7),
+        "color": "#179045"
 },
 {
         "id": "bf_s",
         "legend": "Peasant socialists",
         "name": "Peasant socialists",
         "seats": Math.round(Q.bf_s_r*7),
+        "color": "#74B58A"
 },
 {
         "id": "bf_c",
         "legend": "Peasant Conservatives",
         "name": "Peasant Conservatives",
         "seats": Math.round(Q.bf_c_r*7),
+        "color": "#11572C"
 },
 {
         "id": "rlrp_p",
         "legend": "Peoples Liberals",
         "name": "Peoples Liberals",
         "seats": Math.round(Q.rlrp_p_r*7),
+        "color": "#CCB77A"
 },
 {
         "id": "rlrp_r",
         "legend": "Republican Liberals",
         "name": "Republican Liberals",
         "seats": Math.round(Q.rlrp_r_r*7),
+        "color": "#DAB74C"
 },
 {
         "id": "rlrp_c",
         "legend": "Constitutional Liberals",
         "name": "Constitutional Liberals",
         "seats": Math.round(Q.rlrp_c_r*7),
+        "color": "#B0982C"
 },
 {
         "id": "lcpr_c",
         "legend": "Constitutional Liberals",
         "name": "Constitutional Liberals",
         "seats": Math.round(Q.lcpr_c_r*7),
+        "color": "#B0802C"
 },
 {
         "id": "lcpr_n",
         "legend": "National Liberals",
         "name": "National Liberals",
         "seats": Math.round(Q.lcpr_n_r*7),
+        "color": "#BD7915"
 },
 {
         "id": "lcpr_i",
         "legend": "Industrialists",
         "name": "Industrialists",
         "seats": Math.round(Q.lcpr_i_r*7),
+        "color": "#855C14"
 },
 {
         "id": "rnkp_yc",
         "legend": "RNKP Young Conservatives",
         "name": "RNKP Young Conservatives",
         "seats": Math.round(Q.rnkp_yc_r*7),
+        "color": "#5C649C"
 },
 {
         "id": "rnkp_oc",
         "legend": "RNKP Old Conservatives",
         "name": "RNKP Old Conservatives",
         "seats": Math.round(Q.rnkp_oc_r*7),
+        "color": "#263B96"
 },
 {
         "id": "rnkp_rc",
         "legend": "RNKP Right Conservatives",
         "name": "RNKP Right Conservatives",
         "seats": Math.round(Q.rnkp_rc_r*7),
+        "color": "#102347"
 },
 {
         "id": "other",
         "legend": "Others",
         "name": "Others",
         "seats": Math.round(Q.other_r*7),
+        "color": "#909090"
 },
 {
         "id": "npf_c",
         "legend": "NPF Party Centrists",
         "name": "NPF Party Centrists",
         "seats": Math.round(Q.npf_c_r*7),
+        "color": "#917091"
 },
 {
         "id": "npf_og",
         "legend": "NPF Old Guard",
         "name": "NPF Old Guard",
         "seats": Math.round(Q.npf_og_r*7),
+        "color": "#654D5A"
 },
 {
         "id": "npf_r",
         "legend": "NPF Renewelists",
         "name": "NPF Renewelists",
         "seats": Math.round(Q.npf_r_r*7),
+        "color": "#570554"
 },
 ]);
 
