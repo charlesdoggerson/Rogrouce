@@ -147,7 +147,28 @@ Q.prussian_government = "SPD";
 // RNKP - Rogroucean Rangers / RR ( idea, not added) 
 // LCPR - Orange Bands/ OB (  idea, not added) 
 // NPF - Patriotic Fighter League / PFL 
-// Independent - Great Veterans Union / SV 
+// Independent - Great Veterans Union / SV
+q.sr_strength = 50;
+Q.sr_militancy = 0.3;
+Q.sr_banned = 0;
+Q.rk_strength = 150;
+Q.rk_militancy = 0.2;
+Q.rk_banned = 0;
+Q.fk_strength = 500;
+Q.fk_militancy = 0.1;
+Q.fk_banned = 0;
+Q.gb_strength = 300;
+Q.gb_militancy = 0.4;
+Q.gb_banned = 0;
+Q.bb_strength = 20;
+Q.bb_militancy = 0.1;
+Q.bb_banned = 0;
+Q.pfl_strength = 50;
+Q.pfl_militancy = 0.4;
+Q.pfl_banned = 0;
+Q.sv_strength = 800;
+Q.sv_militancy = 0.5;
+Q.sv_banned = 0;
 Q.rb_strength = 2000;
 Q.rb_militancy = 0.01;
 Q.women_in_rb = 0;
