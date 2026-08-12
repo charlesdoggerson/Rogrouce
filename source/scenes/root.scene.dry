@@ -459,7 +459,7 @@ Q.rlrp_c_strength = 30;
 //RKP stuff
 Q.rkp_i_strength = 50;
 Q.rkp_l_strength = 30;
-Q.rkrp_r_strength = 20;
+Q.rkp_r_strength = 20;
 
 //RNKP stuff
 Q.rnkp_yc_strength = 40;
