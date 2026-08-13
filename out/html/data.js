@@ -68,6 +68,11 @@ const colourList = [{
         word: "SV",
         style: "color: #4E6782; font-weight: bold;"
     },
+    {
+        word: "SV",
+        style: "color: #4E6782; font-weight: bold;"
+    },
+
 
 
                  
@@ -107,6 +112,14 @@ searchString: "Peasant Front",
 {
     searchString: "NPF",
     explanationText: "<img src=img/NPF.jpg> National Patriot Front"
+    },
+{
+    searchString: "FK",
+    explanationText: "People's Guard <br> The paramillitary of the RNU and the SU"
+    },
+{
+    searchString: "GB",
+    explanationText: "Green Battalions <br> The paramillitary of the Peasant Front. Operates in rural areas"
     },
 ];
 
