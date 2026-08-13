@@ -39,7 +39,37 @@ const colourList = [{
      {
         word: "NPF",
         style: "color: #654D5AF; font-weight: bold;"
-    },                   
+    },
+    {
+        word: "Black Regiments",
+        style: "color: #4D3838; font-weight: bold;"
+    },
+    {
+        word: "RK",
+        style: "color: #610303; font-weight: bold;"
+    },
+    {
+        word: "FK",
+        style: "color: #C78383; font-weight: bold;"
+    },
+    {
+        word: "GB",
+        style: "color: #536E4D; font-weight: bold;"
+    },
+    {
+        word: "BB",
+        style: "color: #568FE8; font-weight: bold;"
+    },
+    {
+        word: "PFL",
+        style: "color: #40074D; font-weight: bold;"
+    },
+    {
+        word: "SV",
+        style: "color: #4E6782; font-weight: bold;"
+    },
+
+
                  
 ];
 const tooltipList = [{
