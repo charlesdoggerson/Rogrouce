@@ -121,6 +121,14 @@ searchString: "Peasant Front",
     searchString: "GB",
     explanationText: "Green Battalions <br> The paramillitary of the Peasant Front. Operates in rural areas"
     },
+{
+    searchString: "SR",
+    explanationText: "Black Regiments <br> An independent paramillitary that usually works with the FVA. Anarchists and Syndicalists fill its ranks."
+    },
+{
+    searchString: "RK",
+    explanationText: "Red Combat Group <br> This is the Paramillitary of the RKP."
+    },
 ];
 
 
