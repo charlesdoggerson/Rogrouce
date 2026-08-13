@@ -102,7 +102,7 @@ searchString: "Peasant Front",
     },
 {
     searchString: "LCPR",
-    explanationText: "<img src=img/LCPR.jpg> Liberal Constitutional Rogroucean Party"
+    explanationText: "<img src=img/LCPR.jpg> Liberal Constitutional Party of Rogrouce"
     },
 {
     searchString: "NPF",
