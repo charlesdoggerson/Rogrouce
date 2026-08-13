@@ -153,9 +153,9 @@ RK Strength: [+ rk_strength_2 +] thousand
 
 RK Militarization: [+ rk_militancy : militancy +]
 
-SR Strength: [+ sr_strength_2 +] thousand
+Black Regiments Strength: [+ sr_strength_2 +] thousand
 
-SR Militarization: [+ sr_militancy : militancy +]
+Black Regiments Militarization: [+ sr_militancy : militancy +]
 
 SV Strength: [+ sv_strength_2 +] thousand
 
