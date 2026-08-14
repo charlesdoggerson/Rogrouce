@@ -49,7 +49,7 @@ subtitle: The -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 view-if: radio = 0
-on-arrival: radio += 1; resources -= 2; new_middle_rnu += 1*(1 - dissent); old_middle_rnu += 2*(1 - dissent); workers_rnu += 4*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent); nationalism -= 3*(1 - dissent) if pacifism > 1; pro_republic += 3*(1-dissent) if democratization > 1; front_unity -= 10; lib_angry += 1; bf_angry += 1; su_anrgy += 1;
+on-arrival: radio += 1; resources -= 2; new_middle_rnu += 3*(1 - dissent); old_middle_rnu += 2*(1 - dissent); workers_rnu += 4*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent); nationalism -= 3*(1 - dissent) if pacifism > 1; pro_republic += 3*(1-dissent) if democratization > 1; front_unity -= 10; lib_angry += 1; bf_angry += 1; su_anrgy += 1;
 
 Our new radio station allows us to broadcast our <span style="color: #E57373;">message</span> independently from the rest of the  <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> and they have seemingly been fine with it. 
 
@@ -59,7 +59,7 @@ However, the issue of scheduling arises. our <span style="color: #E53935;">al</s
 - @no_compromise: We will not relinquish our well earned timeslots.
 
 @compromise
-on-arrival: front_unity +=5; lib_angry -= 1; bf_angry -= 1; su_angry -= 1; new_middle_rnu -= 1*(1 - dissent); old_middle_rnu -= 1*(1 - dissent); radio_compromise = 1;
+on-arrival: front_unity +=5; lib_angry -= 1; bf_angry -= 1; su_angry -= 1; new_middle_rnu -= 4*(1 - dissent); old_middle_rnu -= 4*(1 - dissent); radio_compromise = 1;
 
 While it will certainly hurt us, our <span style="color: #E53935;">al</span><span style="color: #2E7D32;">li</span><span style="color: #DAB74C;">es</span> are satisfied with our compromise. 
 
