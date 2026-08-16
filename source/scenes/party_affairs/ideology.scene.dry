@@ -26,7 +26,7 @@ if (Q.ideology && Q.ideology != "left") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; rlrp_relation -= 3; lcpr_relation -= 5; rnkp _relation -= 5; nationalization_support += 1; rkp_relation += 3; su_relation +=5;
+on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; rlrp_relation -= 3; lcpr_relation -= 5; rnkp _relation -= 5; nationalization_support += 1; rkp_relation += 3; su_relation +=5 
 
 The left wing of our party want us to reconcile with the left, limit our cooperation with he right as much as possible and ensure we remain committed to class struggle.
 
