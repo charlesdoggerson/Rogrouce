@@ -633,11 +633,6 @@ table {
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
-.seat.rnu_la {
-    fill: #AB6D6D;          
-    stroke: var(--border-color);
-    stroke-width: 1.5px;
-}
 .seat.rnu_r {
     fill: #CC7C7C;         
     stroke: var(--border-color);
