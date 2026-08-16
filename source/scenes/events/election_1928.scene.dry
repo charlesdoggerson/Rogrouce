@@ -218,7 +218,6 @@ Q.npf_r_r  = Math.floor(Q.npf_r * (Q.npf_r_strength  / 100));
 
 Q.rnu_l_r = Math.floor(Q.rnu_r * (Q.left_strength  / 100));
 Q.rnu_c_r = Math.floor(Q.rnu_r * (Q.center_strength  / 100));
-Q.rnu_labor_r = Math.floor(Q.rnu_r * (Q.labor_strength  / 100));
 Q.rnu_reformist_r = Math.floor(Q.rnu_r * (Q.reformist_strength  / 100));
 
 var election_result = {'date': new Date(Q.year, Q.month - 1)};
@@ -297,12 +296,6 @@ data = data.concat([
         "legend": "RNU Centrists",
         "name": "RNU Centrists",
         "seats": Math.round(Q.rnu_c_r*7),
-},
-{
-        "id": "rnu_la",
-        "legend": "RNU Labor",
-        "name": "RNU Labor",
-        "seats": Math.round(Q.rnu_labor_r*7),
 },
 {
         "id": "rnu_r",
