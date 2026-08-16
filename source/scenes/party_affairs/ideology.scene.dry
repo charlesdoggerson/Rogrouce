@@ -10,26 +10,25 @@ max-visits: 3
 
 = Questions of Ideology
 
-The SPD is torn between many different ideological currents. What should be our primary ideological guidance for now?
+The RNU is torn between the question of ideological doctrine and pragmatism. Which course should we sway the party towards?
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
-- @centrist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
-- @reform: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
+- @left: We are still a socialist party above all else! We should still act like one!
+- @centrist: There is no need to sway the boat, our steady course has done us well so far.
+- @right: We should consider more pragmatic approaches to saving democracy, even if it means we need to change our rhetoric and views.
 - @easy_discard
 
-@class_struggle
+@left
 on-arrival: {!
 if (Q.ideology && Q.ideology != "left") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; rlrp_relation -= 3; lcpr_relation -= 5; rnkp _relation -= 5; nationalization_support += 1; rkp_relation += 3; su_relation +=5;
 
-The radical left of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+The left wing of our party want us to reconcile with the left, limit our cooperation with he right as much as possible and ensure we remain committed to class struggle.
 
 @centrist
 on-arrival: {!
@@ -40,18 +39,8 @@ if (Q.ideology && Q.ideology != "centrist") {
 go-to: changed if changed = 1
 on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
 
-The Center Marxists, represented by Kautsky and Hilferding, support a middle course of preparing for revolution while building up the consciousness of the working class.
+The centrist faction of our party are dedicated to keeping our steady course that has led us so far.
 
-@labor
-on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
-    Q.changed = 1;
-}
-!}
-go-to: changed if changed = 1
-on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
-
-The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
 
 @reform
 on-arrival: {!
@@ -60,11 +49,11 @@ if (Q.ideology && Q.ideology != "reformist") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; rlrp_relation += 5; rnkp_relation += 5; lcpr_relation += 5; rkp_relation -= 5;moderate_plan_support += 1
 
-The reformist wing of the party seeks to preserve the Republic and the democratic system of government, and is most supportive of coalitions with the other pro-democracy parties.
+The right wing of our party seeks strategic cooperation with the right and is more willing to compromise on our values for the greater good of democracy. 
 
 @changed
-on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5
+on-arrival: left_dissent += 5; center_dissent += 5; reformist_dissent += 5
 
 We have changed ideologies. Many in the party feel unmoored.
