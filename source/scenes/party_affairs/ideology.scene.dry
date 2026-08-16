@@ -42,7 +42,7 @@ on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10
 The centrist faction of our party are dedicated to keeping our steady course that has led us so far.
 
 
-@reform
+@right
 on-arrival: {!
 if (Q.ideology && Q.ideology != "reformist") {
     Q.changed = 1;
