@@ -129,6 +129,11 @@ searchString: "Peasant Front",
     searchString: "RK",
     explanationText: "Red Combat Group <br> This is the Paramillitary of the RKP."
     },
+                
+   {
+    searchString: "BB",
+    explanationText: "Blue Bands <br> The Paramilitary of the RLRP. Alongside the Young Republicans, it helps keep liberalism alive."
+    },                  
 ];
 
 
