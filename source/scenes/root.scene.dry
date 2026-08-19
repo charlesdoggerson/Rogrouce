@@ -59,6 +59,19 @@ Q.reformist_dissent = 5;
 Q.neorevisionist_strength = 5;
 Q.neorevisionist_dissent = 10;
 
+//Personal stats of the player
+// first off is is the wealth of the player growing up. This will mostly be cosmetic, since there is no "personal wealth" to use, but it might change dialogue and how some people see the player
+//grew up poor
+Q.poorbg = 0;
+//grew up well enough
+Q.middlebg = 0;
+//grew up wealthy
+Q.richbg = 0;
+//Second of all is if the player fought in the Great War
+Q.soldier = 0;
+// 1 = yes, 0 = no
+// gotta think of more shit to add
+
 // secret events...
 Q.unions_independent = 0;
 Q.centrists_resign = 0;
