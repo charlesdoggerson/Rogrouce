@@ -186,7 +186,7 @@ searchString: "Peasant Front",
    },
 {
     searchString: "Radical Nationalism",
-    explanationText: "Radical Nationalism is an anti republican ideology that advocates for militarism, a strong state and is strongly anti socialist. The product of the oligarhcs in their bid to return to the old order."
+    explanationText: "Radical Nationalism is an anti republican ideology that advocates for militarism, a strong state and is strongly anti socialist. The product of the oligarchs in their bid to return to the old order."
    },
 ];
 
