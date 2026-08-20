@@ -126,6 +126,10 @@ searchString: "Peasant Front",
     explanationText: "Black Regiments <br> An independent paramillitary that usually works with the FVA. Anarchists and Syndicalists fill its ranks."
     },
 {
+    searchString: "Black Regiments",
+    explanationText: "Black Regiments <br> An independent paramillitary that usually works with the FVA. Anarchists and Syndicalists fill its ranks."
+    },
+{
     searchString: "RK",
     explanationText: "Red Combat Group <br> This is the Paramillitary of the RKP."
     },
@@ -133,7 +137,12 @@ searchString: "Peasant Front",
    {
     searchString: "BB",
     explanationText: "Blue Bands <br> The Paramilitary of the RLRP. Alongside the Young Republicans, it helps keep liberalism alive."
-    },                  
+    },    
+                
+   {
+    searchString: "PFL",
+    explanationText: "The Patriotic Fighters League <br> is a paramillitary very closely linked with the NPF. The main reason paramillitary fighting has begun in our country once more."
+    },  
 ];
 
 
