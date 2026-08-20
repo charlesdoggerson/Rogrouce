@@ -506,29 +506,38 @@ Q.rlrp_r_strength = 40;
 Q.rlrp_c_strength = 30;
 
 //RKP stuff
+Q.rkp_leader = "Klaus";
+Q.rkp_radio = 0;
+Q.rkp_front = 0;
 Q.rkp_i_strength = 50;
 Q.rkp_l_strength = 30;
 Q.rkp_r_strength = 20;
 
 //RNKP stuff
+Q.rnkp_leader = "Kresten";
 Q.rnkp_yc_strength = 40;
 Q.rnkp_oc_strength = 40;
 Q.rnkp_rc_strength = 20;
 
 //LCPR stuff
+Q.lcpr_leader = "Robin";
 Q.lcpr_c_strength = 40;
 Q.lcpr_n_strength = 40;
 Q.lcpr_i_strength = 20;
 
 //NPF stuff
+Q.npf_leader = "Viktor";
 Q.npf_c_strength = 10;
 Q.npf_og_strength = 80;
 Q.npf_r_strength = 10;
 
 //Left stuff
+Q.left_leader = "Jimmy";
 Q.left_a_strength = 50;
 Q.left_s_strength = 40;
 Q.left_nb_strength = 10;
+
+//Starting IDEOLOGIES 
 
 
 // have we reformed these institutions to be more democratic?
