@@ -152,6 +152,49 @@ searchString: "Peasant Front",
     searchString: "SV",
     explanationText: "The Soldier's Union <br> is the largest non partisan veterans association in the country."
     },  
+   {
+    searchString: "Revolutionary Peasant Internationalism",
+    explanationText: "A ideology based on the peasantry, Revolutionary Peasant Internationalism advocates the leadership of the rural class in the revolution aswell as a continuous  revolution."
+   },
+   {
+    searchString: "Rogroucean Internationalism",
+    explanationText: "The RKPs tailored version of Internationalism, it follows much of the Internationals line yet differs on stances involving the military,national security and nationalism."
+   },
+   {
+    searchString: "Rogroucean Internationalism",
+    explanationText: "The RKPs tailored version of Internationalism, it follows much of the Internationals line yet differs on stances involving the military,national security and nationalism."
+   },
+{
+    searchString: "Unionist Democratic Socialism",
+    explanationText: "Unionist Democratic Socialism is used to describe the ideology of the centrists of the SU, which advocates for a broad leftist front to achieve socialism through democratic means."
+   },
+{
+    searchString: "Agrarianism",
+    explanationText: "A broad ideology that advocates for the interests of rural communities, focusing more on the independent farmer and peasant."
+   },
+{
+    searchString: "Republican Liberalism",
+    explanationText: "A branch of New Liberalism, Republican Liberalism advocates for a strong democracy, free press and a free yet fair market."
+   },
+{
+    searchString: "Pragmatic Conservatism",
+    explanationText: "Pragmatic Conservatism is unique to the RNKP and argues for strategic cooperation with the current order and the Front to maintain order and security while preserving most national and cultural values."
+   },
+{
+    searchString: "Constitutional Liberalism",
+    explanationText: "A branch of Old Liberalism, Constitutional Liberalism is socially conservative while advocating for a free and deregulated market."
+   },
+{
+    searchString: "Radical Nationalism",
+    explanationText: "Radical Nationalism is an anti republican ideology that advocates for militarism, a strong state and is strongly anti socialist. The product of the oligarhcs in their bid to return to the old order."
+   },
 ];
 
-
+Q.left_ideology = "Revolutionary Peasant Internationalism";
+Q.rkp_ideology = "Rogroucean Internationalism";
+Q.su_ideology = "Unionist Democratic Socialism";
+Q.bf_ideology = "Agrarianism";
+Q.rlrp_ideology = "Republican Liberalism";
+Q.rnkp_ideology = "Pragmatic Conservatism";
+Q.lcpr_ideology = "Constitutional Liberalism";
+Q.npf_ideology = "Radical Nationalism";
