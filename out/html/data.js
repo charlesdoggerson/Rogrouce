@@ -110,6 +110,11 @@ searchString: "Peasant Front",
     explanationText: "<img src=img/LCPR.jpg> Liberal Constitutional Party of Rogrouce"
     },
 {
+    searchString: "LCPR",
+    explanationText: "<img src=img/FVA.jpg> People's Left Alliance"
+    },
+                
+{
     searchString: "NPF",
     explanationText: "<img src=img/NPF.jpg> National Patriot Front"
     },
@@ -142,6 +147,10 @@ searchString: "Peasant Front",
    {
     searchString: "PFL",
     explanationText: "The Patriotic Fighters League <br> is a paramillitary very closely linked with the NPF. The main reason paramillitary fighting has begun in our country once more."
+    },  
+   {
+    searchString: "SV",
+    explanationText: "The Soldier's Union <br> is the largest non partisan veterans association in the country."
     },  
 ];
 
