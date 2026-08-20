@@ -80,6 +80,24 @@ NPF: [+ npf_relation : relationships +]
 
 {!<span class="tooltip-text" title="Others" style="color: #a0a0a0;">Others</span>!}: [+ other_relation : relationships +]
 
+= Party Leadership
+
+FVA: [+ left_ideology +] ([+ left_leader +])
+
+RKP: [+ rkp_ideology +] ([+ rkp_leader +])
+
+SU: [+ su_ideology +] ([+ su_leader +])
+
+BF: [+ bf_ideology +] ([+ bf_leader +])
+
+RLRP: [+ rlrp_ideology +] ([+ rlrp_leader +])
+
+LCPR: [+ lcpr_ideology +] ([+ lcpr_leader +])
+
+RNKP: [+ rnkp_ideology +] ([+ rnkp_leader +])
+
+NPF: [+ npf_ideology +] ([+ npf_leader +])
+
 = Internal Factions of the RNU
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
