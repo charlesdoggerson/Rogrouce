@@ -234,6 +234,7 @@ data = [
         "legend": "FVA",
         "name": "FVA",
         "seats": Math.round(Q.left_r*7),
+},
 ];
 data = data.concat([
 {
@@ -272,6 +273,7 @@ data = data.concat([
         "name": "LCPR",
         "seats": Math.round(Q.lcpr_r*7),
 },
+{
         "id": "rnkp",
         "legend": "RNKP",
         "name": "RNKP",
