@@ -106,11 +106,11 @@ searchString: "Peasant Front",
     explanationText: "<img src=img/RNKP.jpg> Rogroucean National Conservative Party"
     },
 {
-    searchString: "FVA",
+    searchString: "LCPR",
     explanationText: "<img src=img/LCPR.jpg> Liberal Constitutional Party of Rogrouce"
     },
 {
-    searchString: "LCPR",
+    searchString: "FVA",
     explanationText: "<img src=img/FVA.jpg> People's Left Alliance"
     },
                 
