@@ -190,11 +190,3 @@ searchString: "Peasant Front",
    },
 ];
 
-Q.left_ideology = "Revolutionary Peasant Internationalism";
-Q.rkp_ideology = "Rogroucean Internationalism";
-Q.su_ideology = "Unionist Democratic Socialism";
-Q.bf_ideology = "Agrarianism";
-Q.rlrp_ideology = "Republican Liberalism";
-Q.rnkp_ideology = "Pragmatic Conservatism";
-Q.lcpr_ideology = "Constitutional Liberalism";
-Q.npf_ideology = "Radical Nationalism";
