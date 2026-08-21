@@ -121,7 +121,7 @@ if (Q.kpd_relation >= 30) {
     Q.weimar_coalition += Q.sapd_r;
 }
 
-Q.left_r = Math.floor(Q.rnu_r*(Q.left_strength/100));
+Q.rnu_left_r = Math.floor(Q.rnu_r*(Q.left_strength/100));
 Q.center_r = Math.floor(Q.rnu_r*(Q.center_strength/100));
 Q.labor_r = Math.floor(Q.rnu_r*(Q.labor_strength/100));
 Q.reformist_r = Math.floor(Q.rnu_r*(Q.reformist_strength/100));
