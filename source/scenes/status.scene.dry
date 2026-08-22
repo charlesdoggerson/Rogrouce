@@ -205,25 +205,29 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 = Projected election results
 
-(if the election were to be held now):
+(if the election were to be held now)
 
-SPD: [+ spd_votes +]%
+RNU: [+ rnu_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+FVA: [+ left_votes +]%
 
-Z + BVP: [+ z_votes +]%
+RKP: [+ rkp_votes +]%
 
-KPD: [+ kpd_votes +]%
+SU: [+ su_votes +]%
 
-[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+BF: [+ bf_votes +]%
 
-DVP: [+ dvp_votes +]%
+RLRP: [+ rlrp_votes +]%
 
-DNVP: [+ dnvp_votes +]%
-
-NSDAP: [+ nsdap_votes +]%
+LCPR: [+ lcpr_votes +]%
 
 Others: [+ other_votes +]%
+
+RNKP: [+ rnkp_votes +]%
+
+NPF: [+ npf_votes +]%
+
+
 
 **Detailed results for each demographic**
 
