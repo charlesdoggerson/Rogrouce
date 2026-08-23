@@ -414,6 +414,20 @@ Q.npf_in_government = 0;
 Q.su_in_government = 1;
 Q.left_in_government = 0;
 
+
+Q.fatherland_coalition = 0;
+// Fatherland front coalition is well...everyone in the fatherland front.
+Q.popular_front = 0;
+// Popular Front is Fatherland + RKP if RKP isnt in the front
+Q.grand_coalition = 0;
+//grand coalition is fatherland front + LCPR + RNKP
+Q.liberal_grand_coalition = 0;
+//liberal grand is fatherland front + LCPR
+Q.conservative_grand_coalition = 0;
+// conservative grand is fatherland front + RNKP
+Q.no_front_coalition = 0;
+// WERE FUCKED
+
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
 Q.in_weimar_coalition = 0;
