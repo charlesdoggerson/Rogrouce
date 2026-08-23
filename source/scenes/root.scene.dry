@@ -547,6 +547,10 @@ Q.rnkp_ideology = "Pragmatic Conservatism";
 Q.lcpr_ideology = "Constitutional Liberalism";
 Q.npf_ideology = "Radical Nationalism";
 
+// killing Jeppe Bang 
+Q.jeppe_left = 0;
+Q.jeppe_right = 0;
+
 
 // have we reformed these institutions to be more democratic?
 Q.judicial_reform = 0;
