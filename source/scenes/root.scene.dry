@@ -789,6 +789,7 @@ go-to: prologue
 
 
 @prologue
+title:Prologue.
 subtitle: Just what life did you have?
 new-page: true
 view-if: year = 1928 and month = 1
