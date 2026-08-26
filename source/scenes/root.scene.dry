@@ -551,7 +551,7 @@ Q.npf_og_strength = 80;
 Q.npf_r_strength = 10;
 
 //Left stuff
-Q.left_leader = "Jimmy";
+Q.left_leader = "Mads";
 Q.left_a_strength = 50;
 Q.left_s_strength = 40;
 Q.left_nb_strength = 10;
