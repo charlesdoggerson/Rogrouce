@@ -1,0 +1,64 @@
+title: Prologue.
+subtitle: Just what life did you have?
+new-page: true
+view-if: year = 1928 and month = 1
+max-visits: 1
+on-arrival: prologue_seen = 1
+tags: event
+
+The future of Rogrouce is uncertain. The Free State has been dismantled, and the <span style="color: #E53935;">Fat</span><span style="color: #E57373;">her</span><span style="color: #2E7D32;">lan</span><span style="color: #DAB74C;">d</span> <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> has brought back democracy. Yet many things are still uncertain, there is no guarantee what will come.
+
+Soon after the fall of the Free State, many right wing members of the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> have left and will eventually form the basis of the RNKP and LCPR. We fought together as brothers for our country, yet no brotherhood will seemingly keep such divided ideologies together. The RKP too left the <span style="color: #E53935;">F</span><span style="color: #E57373;">ro</span><span style="color: #2E7D32;">n</span><span style="color: #DAB74C;">t</span> when it became clear that they will not be able to lead it by themselves.
+
+The oligarchs are not gone, the evil of the old regime remain, it is no doubt that the newly established NPF is their front party to fight for them in our democracy. We need to secure the country, we need to clear its rot.
+
+  GIANT WIP
+
+- @first
+
+@first
+title: Yet, before we get on the tale of Rogrouce, we must look at yours. 
+
+Who you are will shape how others will look at you and what knowledge you may have. An important thing that will shape your life from the beginning is the status of your parents.
+
+- @rural
+
+- @urban
+
+
+@rural
+title: You hail from the countryside.
+on-arrival: ruralbg = 1
+
+Away from the noisy cities, you were born among villages and farms. You knew everyone in your region by name just like everyone knew you. Endless, manual work from day to night is the norm.
+
+- @ruralrich
+- @ruralmodest
+- @ruralpoor
+
+@ruralrich
+title: but you were above it all.
+subtitle: The perks of wealth.
+on-arrival: richbg = 1
+
+Your family held a large estate that was worked on by laborers. You spent a lot of your time being taught the "finer" things in life and to eventually manage the land of the family.
+
+@ruralmodest
+title: It was hard work, but some hard it worse.
+subtitle: Atleast your family owned land.
+on-arrival: middlebg = 1
+
+Hard at work day and night on the land your family owned. They were independent farmers, though the land was not very fertile. You spent much of your time helping out in the farm or selling your produce at the local market.
+
+@ruralpoor
+title: You worked tooth and nail for every penny.
+subtitle: Doing the work others needed for scraps.
+on-arrival: poorbg = 1
+
+Your family travelled around the region for work, having a simple home and not much else to themselves. You herded sheep, collected harvests and did all sorts of manual labor for your family. Luckily enough, you were good enough to become a full time shepard for someone else, yet the financial struggles hit you hard.
+
+
+
+@urban
+title: You hail from the urban cities.
+on-arrival: urbanbg = 1
