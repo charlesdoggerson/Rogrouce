@@ -866,7 +866,9 @@ on-arrival: richbg = 1
 A "proper" school, staff running around you and sometimes, an absense of your parents was something you had to deal with. You studied among your rich peers and life was filled with luxury, even with the constant reminder of your responsibilities to come.
 
 @urbanmodest
-title: 
+title:Your family owned a small business.
+subtitle:It wasn't all that bad.
+on-arrival: middlebg = 1
 
 
 
