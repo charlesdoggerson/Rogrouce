@@ -792,7 +792,6 @@ go-to: prologue
 title:Prologue.
 subtitle: Just what life did you have?
 new-page: true
-view-if: year = 1928 and month = 1
 max-visits: 1
 on-arrival: prologue_seen = 1
 tags: event
@@ -852,7 +851,26 @@ Your family travelled around the region for work, having a simple home and not m
 @urban
 title: You hail from the urban cities.
 on-arrival: urbanbg = 1
-go-to: @1928_main
+
+In the heartplace of industry, administration and trade, you were born in one of various Rogroucean cities. Full of sounds and smells, you could safely attend  very basic education without much issue.
+
+- @urbanrich
+- @urbanmodest
+- @urbanpoor
+
+@urbanrich
+title:You were taught manners and the "proper" way of speaking.
+subtitle: You were told you need these to inherit the business.
+on-arrival: richbg = 1
+
+A "proper" school, staff running around you and sometimes, an absense of your parents was something you had to deal with. You studied among your rich peers and life was filled with luxury, even with the constant reminder of your responsibilities to come.
+
+@urbanmodest
+title: 
+
+
+
+
 
 
 
