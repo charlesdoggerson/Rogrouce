@@ -328,10 +328,10 @@ Q.rogroucean_rural_fva = 0;
 Q.rogroucean_rural_rkp = 0;
 Q.rogroucean_rural_su = 0;
 Q.rogroucean_rural_rnu = 10;
-Q.rogroucean_rural_bf = 55;
+Q.rogroucean_rural_bf = 40;
 Q.rogroucean_rural_rlrp = 0;
 Q.rogroucean_rural_lcpr = 5;
-Q.rogroucean_rural_rnkp = 30;
+Q.rogroucean_rural_rnkp = 40;
 Q.rogroucean_rural_npf = 5;
 
 Q.unemployed_fva = 5;
@@ -358,10 +358,10 @@ Q.native_rural_fva = 0;
 Q.native_rural_rkp = 5;
 Q.native_rural_su = 0;
 Q.native_rural_rnu = 5;
-Q.native_rural_bf = 50;
+Q.native_rural_bf = 45;
 Q.native_rural_rlrp = 0;
 Q.native_rural_lcpr = 0;
-Q.native_rural_rnkp = 40;
+Q.native_rural_rnkp = 45;
 Q.native_rural_npf = 0;
 
 
