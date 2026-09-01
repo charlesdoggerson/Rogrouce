@@ -365,7 +365,7 @@ Q.astrenian_lcpr = 50;
 Q.astrenian_rnkp = 60;
 Q.astrenian_npf = 0;
 
-Q.dradulian_fva = 70;
+Q.dradulian_fva = 80;
 Q.dradulian_rkp = 5;
 Q.dradulian_su = 0;
 Q.dradulian_rnu = 5;
