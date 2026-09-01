@@ -537,7 +537,7 @@ table {
 }
 
 /* Styles for parties */
-.seat.left {
+.seat.fva {
     fill: #2B0303;
 }
 .seat.rkp {
@@ -575,17 +575,17 @@ table {
 .seat.npf {
     fill: #654D5A;
 }
-.seat.left_a {
+.seat.fva_a {
     fill: #0D0C0C;
     stroke: #450808;
     stroke-width: 1px;
 }
-.seat.left_s {
+.seat.fva_s {
     fill: #592E2E;
     stroke: #450808;
     stroke-width: 1px;
 }
-.seat.left_nb {
+.seat.fva_nb {
     fill: #634848;
     stroke: #450808;
     stroke-width: 1px;
