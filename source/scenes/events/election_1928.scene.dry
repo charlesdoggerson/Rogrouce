@@ -121,7 +121,7 @@ if (Q.kpd_relation >= 30) {
     Q.weimar_coalition += Q.sapd_r;
 }
 
-Q.rnu_left_r = Math.floor(Q.rnu_r*(Q.left_strength/100));
+Q.left_r = Math.floor(Q.rnu_r*(Q.left_strength/100));
 Q.center_r = Math.floor(Q.rnu_r*(Q.center_strength/100));
 Q.labor_r = Math.floor(Q.rnu_r*(Q.labor_strength/100));
 Q.reformist_r = Math.floor(Q.rnu_r*(Q.reformist_strength/100));
@@ -183,9 +183,9 @@ if (Q.nsdap_r >= 15) {
     Q.understanding_enemy_timer = 2;
 }
 
-Q.left_a_r = Math.floor(Q.left_r*(Q.left_a_strength/100));
-Q.left_s_r = Math.floor(Q.left_r*(Q.left_s_strength/100));
-Q.left_nb_r = Math.floor(Q.left_r*(Q.left_nb_strength/100));
+Q.fva_a_r = Math.floor(Q.fva_r*(Q.left_a_strength/100));
+Q.fva_s_r = Math.floor(Q.fva_r*(Q.left_s_strength/100));
+Q.fva_nb_r = Math.floor(Q.fva_r*(Q.left_nb_strength/100));
 
 
 Q.su_c_r = Math.floor(Q.su_r * (Q.su_c_strength / 100));
@@ -230,10 +230,10 @@ on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
 data = [
 {
-        "id": "left",
+        "id": "fva",
         "legend": "FVA",
         "name": "FVA",
-        "seats": Math.round(Q.left_r*7),
+        "seats": Math.round(Q.fva_r*7),
 },
 ];
 data = data.concat([
@@ -320,7 +320,7 @@ go-to: coalition_menu
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E57373; outline: 2px; outline-style: solid;'> </div> !} RNU: {!</td><td>!} [+ rnu_r +]% {!</td><td>!} [+ str_change_rnu +]  {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#2B0303'> </div> !}FVA: {!</td><td>!} [+ left_r +]% {!</td><td>!} [+ str_change_left +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#2B0303'> </div> !}FVA: {!</td><td>!} [+ fva_r +]% {!</td><td>!} [+ str_change_fva +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#591716'> </div> !}RKP: {!</td><td>!} [+ rkp_r +]% {!</td><td>!} [+ str_change_rkp +] {!</td></tr>!}
 
