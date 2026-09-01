@@ -320,9 +320,9 @@ Q.upper_su = 0;
 Q.upper_rnu = 0;
 Q.upper_bf = 0;
 Q.upper_rlrp = 5;
-Q.upper_lcpr= 40;
-Q.upper_rnkp = 50;
-Q.upper_npf = 5;
+Q.upper_lcpr= 25;
+Q.upper_rnkp = 40;
+Q.upper_npf = 30;
 
 Q.rogroucean_rural_fva = 5;
 Q.rogroucean_rural_rkp = 1;
