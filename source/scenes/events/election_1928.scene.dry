@@ -280,12 +280,6 @@ data = data.concat([
         "seats": Math.round(Q.rnkp_r*7),
 },
 {
-        "id": "other",
-        "legend": "Others",
-        "name": "Others",
-        "seats": Math.round(Q.other_r*7),
-},
-{
         "id": "npf",
         "legend": "NPF",
         "name": "NPF",
@@ -333,8 +327,6 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#F57C00'> </div> !} LCPR: {!</td><td>!} [+ lcpr_r +]% {!</td><td>!} [+ str_change_lcpr +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#303F9F'> </div> !} RNKP: {!</td><td>!} [+ rnkp_r +]% {!</td><td>!} [+ str_change_rnkp +] {!</td></tr>!}
- 
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#654D5A'> </div> !} NPF: {!</td><td>!} [+ npf_r +]% {!</td><td>!} [+ str_change_npf +] {!</td></tr>!}
 {!</table>!}
