@@ -295,9 +295,9 @@ Q.sapd_formed = 0;
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.rogroucean_workers_fva = 0;
-Q.rogroucean_workers_rkp = 20;
-Q.rogroucean_workers_su = 15;
-Q.rogroucean_workers_rnu = 60;
+Q.rogroucean_workers_rkp = 30;
+Q.rogroucean_workers_su = 20;
+Q.rogroucean_workers_rnu = 45;
 Q.rogroucean_workers_bf = 0;
 Q.rogroucean_workers_rlrp = 0;
 Q.rogroucean_workers_lcpr = 0;
@@ -335,8 +335,8 @@ Q.rogroucean_rural_rnkp = 30;
 Q.rogroucean_rural_npf = 5;
 
 Q.unemployed_fva = 5;
-Q.unemployed_rkp = 30;
-Q.unemployed_su = 15;
+Q.unemployed_rkp = 35;
+Q.unemployed_su = 10;
 Q.unemployed_rnu = 30;
 Q.unemployed_bf = 0;
 Q.unemployed_rlrp = 0;
@@ -345,17 +345,17 @@ Q.unemployed_rnkp = 5;
 Q.unemployed_npf = 10;
 
 Q.native_workers_fva = 0;
-Q.native_workers_rkp = 20;
+Q.native_workers_rkp = 35;
 Q.native_workers_su = 10;
-Q.native_workers_rnu = 60;
+Q.native_workers_rnu = 50;
 Q.native_workers_bf = 0;
 Q.native_workers_rlrp = 0;
 Q.native_workers_lcpr = 0;
-Q.native_workers_rnkp = 5;
+Q.native_workers_rnkp = 0;
 Q.native_workers_npf = 5;
 
-Q.native_rural_fva = 5;
-Q.native_rural_rkp = 2;
+Q.native_rural_fva = 0;
+Q.native_rural_rkp = 5;
 Q.native_rural_su = 0;
 Q.native_rural_rnu = 5;
 Q.native_rural_bf = 50;
@@ -366,8 +366,8 @@ Q.native_rural_npf = 0;
 
 
 Q.astrenian_fva = 0;
-Q.astrenian_rkp = 2;
-Q.astrenian_su = 3;
+Q.astrenian_rkp = 3;
+Q.astrenian_su = 2;
 Q.astrenian_rnu = 10;
 Q.astrenian_bf = 5;
 Q.astrenian_rlrp = 40;
@@ -376,10 +376,10 @@ Q.astrenian_rnkp = 0;
 Q.astrenian_npf = 0;
 
 Q.dradulian_fva = 80;
-Q.dradulian_rkp = 5;
+Q.dradulian_rkp = 10;
 Q.dradulian_su = 0;
 Q.dradulian_rnu = 5;
-Q.dradulian_bf = 10;
+Q.dradulian_bf = 5;
 Q.dradulian_rlrp = 0;
 Q.dradulian_lcpr = 0;
 Q.dradulian_rnkp = 0;
