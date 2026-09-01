@@ -131,7 +131,6 @@ Q.lcpr_relation = 40;
 Q.rnkp_relation = 30;
 Q.lu_relation = 20;
 Q.npf_relation = 0;
-Q.other_relation = 30;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
@@ -257,17 +256,15 @@ Q.capital_strike_progress = 0;
 Q.budget = 4;
 
 // Proportion of different social groups
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 30; // industry and trade
-Q.old_middle = 15; // "old mittelstand"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 15; // "new mittelstand"
-Q.rural = 36; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 10;
-Q.veteran = 14;
-
-// unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
+Q.rogroucean_workers = 14;
+Q.middle = 14;
+Q.upper = 3;
+Q.rogroucean_rural = 23; 
+Q.native_workers = 10;
+Q.native_rural = 15;
+Q.unemployed = 8;
+Q.astrenian = 4;
+Q.dradulian = 9;
 
 // income for industrial workers in reichsmarks/year - 1928 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
 Q.income = 1600;
@@ -289,79 +286,94 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'veteran'];
-Q.parties =  ['left','rnu','su','rkp', 'bf', 'rlrp', 'lcpr', 'rnkp', 'npf', 'other'];
+Q.classes = ['rogroucean_workers', 'middle', 'upper', 'rogroucean_rural', 'unemployed', 'native_workers', 'native_rural','astrenian','dradulian'];
+Q.parties =  ['fva','rnu','su','rkp', 'bf', 'rlrp', 'lcpr', 'rnkp', 'npf'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_left = 5;
-Q.workers_rkp = 30;
-Q.workers_su = 10;
-Q.workers_rnu = 50;
-Q.workers_bf = 0;
-Q.workers_rlrp = 0;
-Q.workers_lcpr = 0;
-Q.workers_rnkp = 10;
-Q.workers_npf = 0;
-Q.workers_other = 5;
+Q.rogroucean_workers_fva = 2;
+Q.rogroucean_workers_rkp = 35;
+Q.rogroucean_workers_su = 10;
+Q.rogroucean_workers_rnu = 60;
+Q.rogroucean_workers_bf = 0;
+Q.rogroucean_workers_rlrp = 0;
+Q.rogroucean_workers_lcpr = 0;
+Q.rogroucean_workers_rnkp = 10;
+Q.rogroucean_workers_npf = 0;
 
-Q.old_middle_left = 0;
-Q.old_middle_rkp = 0;
-Q.old_middle_su = 0;
-Q.old_middle_rnu = 5;
-Q.old_middle_bf = 0;
-Q.old_middle_rlrp = 10;
-Q.old_middle_lcpr= 25;
-Q.old_middle_rnkp = 25;
-Q.old_middle_npf = 25;
-Q.old_middle_other = 10;
+Q.middle_fva = 0;
+Q.middle_rkp = 0;
+Q.middle_su = 0;
+Q.middle_rnu = 5;
+Q.middle_bf = 0;
+Q.middle_rlrp = 30;
+Q.middle_lcpr= 40;
+Q.middle_rnkp = 15;
+Q.middle_npf = 5;
 
-Q.new_middle_left = 0;
-Q.new_middle_su = 0;
-Q.new_middle_rkp = 0;
-Q.new_middle_rnu = 5;
-Q.new_middle_bf = 0;
-Q.new_middle_rlrp= 25;
-Q.new_middle_lcpr = 25;
-Q.new_middle_rnkp = 10;
-Q.new_middle_npf = 5;
-Q.new_middle_other = 5;
+Q.rogroucean_rural_fva = 5;
+Q.rogroucean_rural_rkp = 1;
+Q.rogroucean_rural_su = 0;
+Q.rogroucean_rural_rnu = 5;
+Q.rogroucean_rural_bf = 60;
+Q.rogroucean_rural_rlrp = 0;
+Q.rogroucean_rural_lcpr = 5;
+Q.rogroucean_rural_rnkp = 40;
+Q.rogroucean_rural_npf = 5;
 
-Q.rural_left = 1;
-Q.rural_rkp = 1;
-Q.rural_su = 0;
-Q.rural_rnu = 5;
-Q.rural_bf = 50;
-Q.rural_rlrp = 0;
-Q.rural_lcpr = 5;
-Q.rural_rnkp = 50;
-Q.rural_npf = 5;
-Q.rural_other = 5;
-
-Q.unemployed_left = 5;
-Q.unemployed_rkp = 20;
+Q.unemployed_fva = 5;
+Q.unemployed_rkp = 30;
 Q.unemployed_su = 10;
 Q.unemployed_rnu = 20;
-Q.unemployed_bf = 10;
+Q.unemployed_bf = 0;
 Q.unemployed_rlrp = 0;
 Q.unemployed_lcpr = 0;
 Q.unemployed_rnkp = 5;
-Q.unemployed_npf = 5;
-Q.unemployed_other = 5;
+Q.unemployed_npf = 0;
 
-Q.veteran_left = 0;
-Q.veteran_rkp = 5;
-Q.veteran_su = 10;
-Q.veteran_rnu = 30;
-Q.veteran_bf = 10;
-Q.veteran_rlrp = 0;
-Q.veteran_lcpr = 0;
-Q.veteran_rnkp = 40;
-Q.veteran_npf = 15;
-Q.veteran_other = 5;
+Q.native_workers_fva = 5;
+Q.native_workers_rkp = 30;
+Q.native_workers_su = 10;
+Q.native_workers_rnu = 55;
+Q.native_workers_bf = 0;
+Q.native_workers_rlrp = 5;
+Q.native_workers_lcpr = 0;
+Q.native_workers_rnkp = 5;
+Q.native_workers_npf = 5;
+
+Q.native_rural_fva = 5;
+Q.native_rural_rkp = 2;
+Q.native_rural_su = 0;
+Q.native_rural_rnu = 5;
+Q.native_rural_bf = 50;
+Q.native_rural_rlrp = 0;
+Q.native_rural_lcpr = 0;
+Q.native_rural_rnkp = 60;
+Q.native_rural_npf = 0;
+
+
+Q.astrenian_fva = 0;
+Q.astrenian_rkp = 2;
+Q.astrenian_su = 3;
+Q.astrenian_rnu = 5;
+Q.astrenian_bf = 5;
+Q.astrenian_rlrp = 40;
+Q.astrenian_lcpr = 50;
+Q.astrenian_rnkp = 60;
+Q.astrenian_npf = 0;
+
+Q.dradulian_fva = 70;
+Q.dradulian_rkp = 5;
+Q.dradulian_su = 0;
+Q.dradulian_rnu = 5;
+Q.dradulian_bf = 10;
+Q.dradulian_rlrp = 0;
+Q.dradulian_lcpr = 0;
+Q.dradulian_rnkp = 0;
+Q.dradulian_npf = 0;
 
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
@@ -369,7 +381,7 @@ Q.veteran_other = 5;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.left_r = 5;
+Q.fva_r = 5;
 Q.rkp_r = 10;
 Q.su_r = 7;
 Q.rnu_r = 20;
@@ -417,7 +429,7 @@ Q.lcpr_in_government = 1;
 Q.rnkp_in_government = 0;
 Q.npf_in_government = 0;
 Q.su_in_government = 1;
-Q.left_in_government = 0;
+Q.fva_in_government = 0;
 
 
 Q.fatherland_coalition = 0;
@@ -551,13 +563,13 @@ Q.npf_og_strength = 80;
 Q.npf_r_strength = 10;
 
 //Left stuff
-Q.left_leader = "Mads";
-Q.left_a_strength = 50;
-Q.left_s_strength = 40;
-Q.left_nb_strength = 10;
+Q.fva_leader = "Mads";
+Q.fva_a_strength = 50;
+Q.fva_s_strength = 40;
+Q.fva_nb_strength = 10;
 
 //ideology stuff
-Q.left_ideology = "Revolutionary Peasant Internationalism";
+Q.fva_ideology = "Revolutionary Peasant Internationalism";
 Q.rkp_ideology = "Rogroucean Internationalism";
 Q.su_ideology = "Unionist Democratic Socialism";
 Q.bf_ideology = "Agrarianism";
