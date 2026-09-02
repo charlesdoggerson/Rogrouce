@@ -854,12 +854,16 @@ on-arrival: richbg = 1
 
 Your family held a large estate that was worked on by laborers. You spent a lot of your time being taught the "finer" things in life and to eventually manage the land of the family.
 
+- @second
+
 @ruralmodest
 title: It was hard work, but some hard it worse.
 subtitle: Atleast your family owned land.
 on-arrival: middlebg = 1
 
 Hard at work day and night on the land your family owned. They were independent farmers, though the land was not very fertile. You spent much of your time helping out in the farm or selling your produce at the local market.
+
+- @second
 
 @ruralpoor
 title: You worked tooth and nail for every penny.
@@ -868,7 +872,7 @@ on-arrival: poorbg = 1
 
 Your family travelled around the region for work, having a simple home and not much else to themselves. You herded sheep, collected harvests and did all sorts of manual labor for your family. Luckily enough, you were good enough to become a full time shepard for someone else, yet the financial struggles hit you hard.
 
-
+- @second
 
 @urban
 title: You hail from the urban cities.
@@ -887,12 +891,16 @@ on-arrival: richbg = 1
 
 A "proper" school, staff running around you and sometimes, an absense of your parents was something you had to deal with. You studied among your rich peers and life was filled with luxury, even with the constant reminder of your responsibilities to come.
 
+- @second
+
 @urbanmodest
 title:Your family owned a small business.
 subtitle:It wasn't all that bad.
 on-arrival: middlebg = 1
 
 You got an education, spent time learning the basics of your trade and had time to explore and enjoy the city you live in. You made friends and had a regular, unremarkable childhood. Your parents pushed you towards attending university yet the family business was always there to fall back on.
+
+- @second
 
 @urbanpoor
 title:After school, you often had to work.
@@ -901,8 +909,19 @@ on-arrival: poorbg = 1
 
 While still being able to attend school, you oftentimes found yourself  working after school. You and your bike made rounds around the city to deliver papers to every house you could. The time spent not working was directed to chores or playing with your friends. Even in the hardship, you had hope.
 
+- @second
+
+@second
+title:Despite it all, you made it through.
 
 Your childhood was otherwise uneventful, though you began learning that not all was well. The National Party kept winning elections on local, regional and the national level. [if not richbg: Every weekend, you had to attend a rally for "Youth Fitness", which included sports, marching, camping and political ideology. You were told about the evils of socialism and the weakness of democracy yet you, alongside many of your peers, felt unconvinced.] 
+
+When you grew up, it was finally time for you to decide what you do with your life. No matter what your parents told you, in the end, it was your own choice.
+
+- @uni
+- @army
+- @trade
+
 
 
 
