@@ -296,12 +296,12 @@ Q.sapd_formed = 0;
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.rogroucean_workers_fva = 0;
 Q.rogroucean_workers_rkp = 30;
-Q.rogroucean_workers_su = 20;
-Q.rogroucean_workers_rnu = 45;
+Q.rogroucean_workers_su = 15;
+Q.rogroucean_workers_rnu = 55;
 Q.rogroucean_workers_bf = 0;
 Q.rogroucean_workers_rlrp = 0;
 Q.rogroucean_workers_lcpr = 0;
-Q.rogroucean_workers_rnkp = 5;
+Q.rogroucean_workers_rnkp = 0;
 Q.rogroucean_workers_npf = 0;
 
 Q.middle_fva = 0;
@@ -326,9 +326,9 @@ Q.upper_npf = 30;
 
 Q.rogroucean_rural_fva = 0;
 Q.rogroucean_rural_rkp = 10;
-Q.rogroucean_rural_su = 0;
+Q.rogroucean_rural_su = 5;
 Q.rogroucean_rural_rnu = 10;
-Q.rogroucean_rural_bf = 40;
+Q.rogroucean_rural_bf = 35;
 Q.rogroucean_rural_rlrp = 0;
 Q.rogroucean_rural_lcpr = 5;
 Q.rogroucean_rural_rnkp = 30;
