@@ -922,6 +922,18 @@ When you grew up, it was finally time for you to decide what you do with your li
 - @army
 - @trade
 
+@uni
+title:A proper education in one of the few universities.
+choose-if: poorbg = 0
+unavailable-subtitle: You couldn't find time or money for university. 
+on-arrival: university = 1
+
+A proper education in university was a great thing to pursue. Your parents had high expectations, yet were always supportive of you and what you chose to major in. 
+
+Though, university life was not simple. While many topics were debated, politics were avoided like the plague. The only party that even had a student wing was the National Party, which you didn't join. You began to realize what was wrong, with your horrors being confirmed when you witnessed a professor of yours, alongside some of your classmates, get escorted out of the university by the police. You never saw them again.
+
+You were not alone, however. Eventually, you found yourself meeting with likeminded individuals. It was not long until you began your work to help distribute and write pamphlets, paint messages on walls at night or bringing books that were banned, books that helped you figure out where you stand politically. Soon enough, you were a member of one of the many student groups that would eventually help form the RNU.
+
 
 
 
