@@ -940,9 +940,13 @@ You were not alone, however. Eventually, you found yourself meeting with likemin
 title:You served your country.
 on-arrival: soldier = 1, officer = 1 if richbg, enlisted = 1 if not richbg
 
-[if poorbg: Your parents wanted you in the army and you didn't have much of a choice, either.] You decided to join the army and serve your duty. You were stationed in southern mountains of the country, near the border of Oskal and Merra, where the Dradulian minority lives. 
+[if poorbg: You didn't have much of a choice,] You decided to join the army and serve your duty. You were stationed in southern mountains of the country, near the border of Oskal and Merra, where the Dradulian minority lives. 
 
 [if enlisted: You were a regular old grunt, a simple rifleman. Life was hard as you patrolled the mountains and did whatever was asked for you. The risk of seperatists attacking was always on your mind as stories would pass on from various squads.]
+
+[if officer: While the ability for people to simply buy their rank was abolished years ago, money gets you places. You enrolled you in military college, your parents funded whatever you needed and they used some of their wealth to "convince" certain people. You were stationed in the mountains as the commander of a small post and could afford to live better then your subordinates.]
+
+Your service was mostly uneventful even in the Dradulian homelands. You did your duty and went on with your day, even if some of those tasks were rather irregular for your job, like taking down political posters on the streets or being ordered to set up checkpoints on roads.
 
 
 
