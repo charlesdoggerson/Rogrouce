@@ -935,6 +935,7 @@ Though, university life was not simple. While many topics were debated, politics
 
 You were not alone, however. Eventually, you found yourself meeting with likeminded individuals. It was not long until you began your work to help distribute and write pamphlets, paint messages on walls at night or bringing books that were banned, books that helped you figure out where you stand politically. Soon enough, you were a member of one of the many student groups that would eventually help form the RNU.
 
+-@war
 
 @army
 title:You served your country.
@@ -948,6 +949,14 @@ on-arrival: soldier = 1, officer = 1 if richbg, enlisted = 1 if not richbg
 
 Your service was mostly uneventful even in the Dradulian homelands. You did your duty and went on with your day, even if some of those tasks were rather irregular for your job, like taking down political posters on the streets or being ordered to set up checkpoints on roads.
 
+-@drads
+-@war
+
+@drads
+title: Who are the dradulians?
+subtitle:I LOVE EXPOSITION
+
+The dradulians are an ethnic minority that live within Rogrouce, Merra and Oskal. 
 
 
 @1928_main
