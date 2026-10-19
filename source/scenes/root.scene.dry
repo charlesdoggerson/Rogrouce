@@ -974,8 +974,20 @@ The resulting unrest led to the Merran Republic sending forces to restore order 
 
 What was once a simple war quickly expanded, with the first target being Rogrouce. Astrenian forces passed the country in an attempt to flank the Merrans.
 
+@fight
+
 -@fight
 title:But the government resisted.
+
+The Free State resisted and in the end, the war was lost. 
+
+Rogrouce got it off easy, however, as the rogroucean mountains proved ferocious. In return for a white peace, we stopped fighting. Our surrender is seen as the beginning of the end of the war.
+
+The Free state eventually collapsed to civil war and we came out on top. The second republic was established, and a provisional government was established. blah blah blah, i need more shit here.
+
+@go
+title:okay lets start
+go-to:@1928_main
 
 
 
