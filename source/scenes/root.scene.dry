@@ -939,7 +939,7 @@ You were not alone, however. Eventually, you found yourself meeting with likemin
 
 @army
 title:You served your country.
-on-arrival: soldier = 1, officer = 1 if richbg, enlisted = 1 if not richbg
+on-arrival: soldier = 1; officer = 1 if richbg; enlisted = 1 if not richbg
 
 [if poorbg: You didn't have much of a choice,] You decided to join the army and serve your duty. You were stationed in southern mountains of the country, near the border of Oskal and Merra, where the Dradulian minority lives. 
 
